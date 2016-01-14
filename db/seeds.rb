@@ -6,10 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-t.string :name
-t.integer :player_id
-t.boolean :alive
-
 Faction.delete_all
 Faction.create(name: 'British Empire', player_id: 1, alive: true)
 Faction.create(name: 'Scottish Rebels', player_id: 2, alive: true)
@@ -32,3 +28,6 @@ Adjacency.create(province1_id: 1, province2_id: 5)
 Fleet.delete_all
 Fleet.create(name: 'British 1st Fleet', position: 1, faction_id: 1, alive: true)
 Fleet.create(name: 'Scottish 1st Fleet', position: 2, faction_id: 2, alive: true)
+
+User.delete_all
+User.create(email: 'bill@exmple.com', password: 'billbillbill')

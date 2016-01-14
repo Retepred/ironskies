@@ -1,2 +1,5 @@
-class Fleet < ActiveRecord::Base
+class Faction < ActiveRecord::Base
+
+
+
 end
