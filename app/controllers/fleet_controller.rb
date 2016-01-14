@@ -1,0 +1,2 @@
+class FleetController < ApplicationController
+end

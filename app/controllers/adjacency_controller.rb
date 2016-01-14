@@ -1,0 +1,2 @@
+class AdjacencyController < ApplicationController
+end
