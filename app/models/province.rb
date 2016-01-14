@@ -19,7 +19,7 @@ class Province < ActiveRecord::Base
 
 # This section of code deals with finding the garrison of a province 
   def fleets
-    Fleet.where("fleets.position = id", id: id)
+    Fleet.where("fleets.position = :id", id: id)
   end
 
   def garrison_ids
