@@ -3,7 +3,7 @@ class Province < ActiveRecord::Base
 
 
 
-# This section of code deals with finding the ids of adjacent provinces 
+# This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies
     Adjacency.where("adjacencies.province1_id = :id or adjacencies.province2_id = :id", id: id)
   end
@@ -17,17 +17,17 @@ class Province < ActiveRecord::Base
   end
 
 
-# This section of code deals with finding the garrison of a province 
+# This section of code deals with finding the garrison of a province, call find_garrison
   def fleets
     Fleet.where("fleets.position = :id", id: id)
   end
 
-  def garrison_ids
-    fleets.pluck(:position)
+  def fleet_positions
+    fleets.pluck(:position).flatten
   end
 
   def garrison
-    Fleet.where("id in (?)", fleets)
+    Fleet.where("id in (?)", fleet_positions)
   end
 
 end
