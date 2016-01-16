@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160116161605) do
+ActiveRecord::Schema.define(version: 20160116172956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160116161605) do
   create_table "adjacencies", force: :cascade do |t|
     t.integer "province1_id"
     t.integer "province2_id"
+    t.integer "adjacency_number"
   end
 
   create_table "adjacenies", force: :cascade do |t|
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160116161605) do
     t.string  "name"
     t.integer "player_id"
     t.boolean "alive"
+    t.integer "faction_number"
   end
 
   create_table "fleets", force: :cascade do |t|
@@ -37,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160116161605) do
     t.integer "position"
     t.integer "faction_id"
     t.boolean "alive"
+    t.integer "fleet_number"
   end
 
   create_table "provinces", force: :cascade do |t|
@@ -45,6 +48,7 @@ ActiveRecord::Schema.define(version: 20160116161605) do
     t.integer "faction_id"
     t.integer "garrison_id"
     t.integer "fleet_number"
+    t.integer "province_number"
   end
 
   create_table "users", force: :cascade do |t|
