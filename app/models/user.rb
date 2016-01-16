@@ -18,5 +18,4 @@ class User < ActiveRecord::Base
     Faction.where("id in (?)", faction_ids)
   end
 
-
 end
