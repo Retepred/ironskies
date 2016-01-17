@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $("button").click(function(){
+      $.post("demo_test_post.asp",
+      {
+          name: "Donald Duck",
+          city: "Duckburg"
+      },
+  });
+});
