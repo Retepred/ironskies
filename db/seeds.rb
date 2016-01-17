@@ -7,14 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Faction.delete_all
-Faction.create(name: 'Old British Empire', player_id: 1, alive: true, faction_number: 1)
-Faction.create(name: "People's Republic of Scotland", player_id: 2, alive: true, faction_number: 2)
-Faction.create(name: 'French Expeditionary Force', player_id: 3, alive: true, faction_number: 3)
-Faction.create(name: 'New Republic', player_id: 4, alive: true, faction_number: 4)
-Faction.create(name: 'The Guild', player_id: 5, alive: true, faction_number: 5)
-Faction.create(name: 'The Knights Templar', player_id: 6, alive: true, faction_number: 6)
-Faction.create(name: 'The Order', player_id: 7, alive: true, faction_number: 7)
-Faction.create(name: 'Neutral', player_id: 8, alive: true, faction_number: 8)
+Faction.create(name: 'Old British Empire', player_id: 1, alive: true, number_of_fleets: 3, faction_number: 1)
+Faction.create(name: "People's Republic of Scotland", player_id: 2, number_of_fleets: 2, alive: true, faction_number: 2)
+Faction.create(name: 'French Expeditionary Force', player_id: 3, number_of_fleets: 2, alive: true, faction_number: 3)
+Faction.create(name: 'New Republic', player_id: 4, number_of_fleets: 2, alive: true, faction_number: 4)
+Faction.create(name: 'The Guild', player_id: 5, number_of_fleets: 2, alive: true, faction_number: 5)
+Faction.create(name: 'The Knights Templar', player_id: 6, number_of_fleets: 2, alive: true, faction_number: 6)
+Faction.create(name: 'The Order', player_id: 7, number_of_fleets: 2, alive: true, faction_number: 7)
+Faction.create(name: 'Neutral', player_id: 8, number_of_fleets: 2, alive: true, faction_number: 8)
 
 Province.delete_all
 Province.create(name: 'London', island: true, fleet_number: 3, faction_id: 1, province_number: 1)
