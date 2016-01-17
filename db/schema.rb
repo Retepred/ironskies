@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160117115647) do
+ActiveRecord::Schema.define(version: 20160117225600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,18 @@ ActiveRecord::Schema.define(version: 20160117115647) do
     t.boolean "alive"
     t.integer "fleet_number"
     t.integer "faction_number"
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string  "name"
+    t.integer "player1_id"
+    t.integer "player2_id"
+    t.integer "player3_id"
+    t.integer "player4_id"
+    t.integer "player5_id"
+    t.integer "player6_id"
+    t.integer "player7_id"
+    t.boolean "completed"
   end
 
   create_table "provinces", force: :cascade do |t|
