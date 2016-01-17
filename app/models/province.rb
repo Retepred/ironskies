@@ -2,11 +2,11 @@ class Province < ActiveRecord::Base
 
 # This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies
-    Adjacency.where("adjacencies.province1_id = :id or adjacencies.province2_id = :id", id: id)
+    Adjacency.where("adjacencies.province1_id = :id or adjacencies.province2_id = :id", id: province_number)
   end
 
   def adjacent_province_ids
-    adjacencies.pluck(:province1_id, :province2_id).flatten.uniq - [id]
+    adjacencies.pluck(:province1_id, :province2_id).flatten.uniq - [province_numberex]
   end
 
   def adjacent_provinces
