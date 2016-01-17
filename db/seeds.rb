@@ -390,9 +390,10 @@ Fleet.create(name: 'British 2nd Fleet', position: 37, faction_id: 1, alive: true
 
 
 
+User.delete_all
 
-
-
+User.create(email: 'bill@example.com', password: 'billbill', password_confirmation: 'billbill')
+User.create(email: 'bob@example.com', password: 'bobbobbob', password_confirmation: 'bobbobbob')
 
 
 
