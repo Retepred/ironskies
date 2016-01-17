@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160116172956) do
+ActiveRecord::Schema.define(version: 20160117105412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160116172956) do
     t.integer "faction_id"
     t.boolean "alive"
     t.integer "fleet_number"
+    t.integer "faction_number"
   end
 
   create_table "provinces", force: :cascade do |t|

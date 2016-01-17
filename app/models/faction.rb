@@ -15,7 +15,7 @@ class Faction < ActiveRecord::Base
 
   # This section of code deals with finding the fleets owned by a faction, call fleet_ids
     def fleets
-      Fleet.where("fleets.fleet_number = :id", id: faction_number)
+      Fleet.where("fleets.faction_number = :id", id: faction_number)
     end
 
     def fleet_ids
