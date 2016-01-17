@@ -1,6 +1,5 @@
 class Faction < ActiveRecord::Base
 
-  @fleet_number = 0
   @points = 0
 
   # This section of code deals with finding the provinces owned by a faction, call owned_province_ids
@@ -30,10 +29,10 @@ class Faction < ActiveRecord::Base
     end  
 
 
-    def update_fleet_number
+    def update_fleet_number(faction_number)
       new_number = fleets.length
-      @fleet_number = new_number
-      @fleet_number
+      faction = Faction.find_by(faction_number)
+      faction.update_attribute(number_of_fleets, new_number)
     end
 
 end
