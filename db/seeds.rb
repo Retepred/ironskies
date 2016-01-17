@@ -385,6 +385,8 @@ Adjacency.create(province1_id: 77, province2_id: 78)
 Fleet.delete_all
 Fleet.create(name: 'British 1st Fleet', position: 1, faction_id: 1, alive: true, faction_number: 1, fleet_number: 1)
 Fleet.create(name: 'British 2nd Fleet', position: 44, faction_id: 1, alive: true, faction_number: 1, fleet_number: 2)
+Fleet.create(name: 'British 1st Fleet', position: 36, faction_id: 1, alive: false, faction_number: 1, fleet_number: 3)
+Fleet.create(name: 'British 2nd Fleet', position: 37, faction_id: 1, alive: false, faction_number: 1, fleet_number: 4)
 
 
 

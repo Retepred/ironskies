@@ -1,5 +1,8 @@
 class Faction < ActiveRecord::Base
 
+  fleet_number = 0
+  points = 0
+
   # This section of code deals with finding the provinces owned by a faction, call owned_province_ids
     def provinces
       Province.where("provinces.province_number = :id", id: faction_number)
@@ -15,7 +18,7 @@ class Faction < ActiveRecord::Base
 
   # This section of code deals with finding the fleets owned by a faction, call fleet_ids
     def fleets
-      Fleet.where("fleets.faction_number = :id", id: faction_number)
+      Fleet.where("fleets.alive = true and fleets.faction_number = :id", id: faction_number)
     end
 
     def fleet_ids
@@ -27,10 +30,8 @@ class Faction < ActiveRecord::Base
     end  
 
 
-    fleet_number = 0
-
     def update_fleet_number
-
+      Fleet.where("fleets.faction_number = :id", id: faction_number) & (fleets.alive = true)
     end
 
 end
