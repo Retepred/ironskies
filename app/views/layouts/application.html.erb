@@ -10,6 +10,27 @@
 </head>
 <body>
 
+<div class='login'>
+  <% if user_signed_in? %>
+    <%= current_user.email %>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <%= link_to "Register", new_user_registration_path %>
+  <% end %>
+</div>
+
+
+<div class="main_menu">
+  <nav>
+      <ul>
+        <li> <%= link_to('Home-', root_path) %> </li>
+        <li> <%= link_to('Games-', games_path) %> </li>
+        <li> <%= link_to('Players', users_path) %></li>
+      </ul>
+  </nav>
+</div>
+
 <%= yield %>
 
 </body>

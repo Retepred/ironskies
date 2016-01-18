@@ -1,0 +1,19 @@
+<div class="show">
+  </br>
+
+  <strong><p><%= @game.name %></p></strong>
+  <p><%= @game.player1.username %> <br>
+  <%= @game.player2.username %></p>
+
+
+<% if @move && @move.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
+
+    <ul>
+    <% @move.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
