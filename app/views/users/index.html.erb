@@ -1,13 +1,13 @@
-<center><h2>TicTacToe</h2></center>
-<center><h3>Scrolling List of Current Players</h3></center>
-<div class="whitebackground">
-  <tbody>
-    <% @users.each do |user| %>
+<div class='main2'>
+  <div class="whitebackground">
+    <tbody>
+      <% @users.each do |user| %>
       <tr>
         <div class="game_names">
          <td><%= user.username %></td>
-        </div>
-      </tr>
-    <% end %>
-  </tbody>
+       </div>
+     </tr>
+     <% end %>
+   </tbody>
+ </div>
 </div>

@@ -34,6 +34,20 @@ ul li {
   display: inline;
 }
 
+.main2 {
+  top: 5rem;
+  border: 1px solid black;
+  position: relative;
+  height:30rem;
+  width: 60%;
+  left: 20%;
+  background: url("http://cdn.speckyboy.com/wp-content/uploads/2013/01/FASA-10.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .main {
   top: 5rem;
   border: 1px solid black;

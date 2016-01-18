@@ -18,23 +18,23 @@ Faction.create(name: 'Neutral', player_id: 8, number_of_fleets: 2, alive: true, 
 
 Province.delete_all
 Province.create(name: 'London', island: true, fleet_number: 3, faction_id: 1, province_number: 1)
-Province.create(name: 'York', island: true, fleet_number: 1, faction_id: 8, province_number: 2)
-Province.create(name: 'Leeds', island: true, fleet_number: 1, faction_id: 8, province_number: 3)
-Province.create(name: 'Newcastle', island: true, fleet_number: 1, faction_id: 8, province_number: 4)
-Province.create(name: 'Birmingham', island: true, fleet_number: 1, faction_id: 8, province_number: 5)
-Province.create(name: 'Liverpool', island: true, fleet_number: 1, faction_id: 8, province_number: 6)
+Province.create(name: 'York', island: true, fleet_number: 2, faction_id: 8, province_number: 2)
+Province.create(name: 'Leeds', island: true, fleet_number: 2, faction_id: 8, province_number: 3)
+Province.create(name: 'Newcastle', island: true, fleet_number: 2, faction_id: 8, province_number: 4)
+Province.create(name: 'Birmingham', island: true, fleet_number: 2, faction_id: 8, province_number: 5)
+Province.create(name: 'Liverpool', island: true, fleet_number: 2, faction_id: 8, province_number: 6)
 Province.create(name: 'Manchester', island: true, fleet_number: 2, faction_id: 6, province_number: 7)
 Province.create(name: 'Southampton', island: true, fleet_number: 2, faction_id: 3, province_number: 8)
 Province.create(name: 'Sheffield', island: true, fleet_number: 2, faction_id: 8, province_number: 9)
 Province.create(name: 'Oxford', island: true, fleet_number: 2, faction_id: 7, province_number: 10)
-Province.create(name: 'Cardiff', island: true, fleet_number: 1, faction_id: 5, province_number: 11)
+Province.create(name: 'Cardiff', island: true, fleet_number: 2, faction_id: 5, province_number: 11)
 Province.create(name: 'Edinburgh', island: true, fleet_number: 2, faction_id: 2, province_number: 12)
-Province.create(name: 'Aberdeen', island: true, fleet_number: 1, faction_id: 8, province_number: 13)
-Province.create(name: 'Glasgow', island: true, fleet_number: 1, faction_id: 8, province_number: 14)
+Province.create(name: 'Aberdeen', island: true, fleet_number: 2, faction_id: 8, province_number: 13)
+Province.create(name: 'Glasgow', island: true, fleet_number: 2, faction_id: 8, province_number: 14)
 Province.create(name: 'Dublin', island: true, fleet_number: 2, faction_id: 4, province_number: 15)
-Province.create(name: 'Cork', island: true, fleet_number: 1, faction_id: 8, province_number: 16)
-Province.create(name: 'Limerick', island: true, fleet_number: 1, faction_id: 8, province_number: 17)
-Province.create(name: 'Belfast', island: true, fleet_number: 1, faction_id: 8, province_number: 18)
+Province.create(name: 'Cork', island: true, fleet_number: 2, faction_id: 8, province_number: 16)
+Province.create(name: 'Limerick', island: true, fleet_number: 2, faction_id: 8, province_number: 17)
+Province.create(name: 'Belfast', island: true, fleet_number: 2, faction_id: 8, province_number: 18)
 Province.create(name: 'sea', island: false, fleet_number: 0, faction_id: 8, province_number: 19)
 Province.create(name: 'sea', island: false, fleet_number: 0, faction_id: 8, province_number: 20)
 Province.create(name: 'sea', island: false, fleet_number: 0, faction_id: 8, province_number: 21)
@@ -392,8 +392,8 @@ Fleet.create(name: 'British 2nd Fleet', position: 37, faction_id: 1, alive: true
 
 User.delete_all
 
-User.create(email: 'bill@example.com', password: 'billbill', password_confirmation: 'billbill')
-User.create(email: 'bob@example.com', password: 'bobbobbob', password_confirmation: 'bobbobbob')
+User.create(username: 'Bill', email: 'bill@example.com', password: 'billbill', password_confirmation: 'billbill')
+User.create(username: 'Bob', email: 'bob@example.com', password: 'bobbobbob', password_confirmation: 'bobbobbob')
 
 
 
