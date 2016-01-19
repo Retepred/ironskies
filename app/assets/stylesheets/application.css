@@ -48,6 +48,20 @@ ul li {
   background-size: cover;
 }
 
+.mainhome {
+  top: 5rem;
+  border: 1px solid black;
+  position: relative;
+  height:30rem;
+  width: 60%;
+  left: 20%;
+  background: url("http://www.scifiwright.com/wp-content/uploads/2011/07/Airships.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .main {
   top: 5rem;
   border: 1px solid black;
