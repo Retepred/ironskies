@@ -20,7 +20,30 @@
    <%= f.label :player2_id %>
    <%= f.collection_select :player2_id, User.all.reject {|user| user == current_user}, :id, :username %>
  </div> 
-
+ <div class="field">
+   <%= f.label :player3_id %>
+   <%= f.collection_select :player3_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div> 
+ <div class="field">
+   <%= f.label :player3_id %>
+   <%= f.collection_select :player3_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div> 
+ <div class="field">
+   <%= f.label :player4_id %>
+   <%= f.collection_select :player4_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div>
+ <div class="field">
+   <%= f.label :player5_id %>
+   <%= f.collection_select :player5_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div>
+ <div class="field">
+   <%= f.label :player6_id %>
+   <%= f.collection_select :player6_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div>
+ <div class="field">
+   <%= f.label :player7_id %>
+   <%= f.collection_select :player7_id, User.all.reject {|user| user == current_user}, :id, :username %>
+ </div>
   <div class="actions">
     <%= f.button %>
   </div>

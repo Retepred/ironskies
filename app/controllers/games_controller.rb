@@ -6,13 +6,11 @@ class GamesController < ApplicationController
   end
 
   def show
-  end
-
-  def new
-    @game = Game.new
+    @game = Game.last
   end
 
   def create
+    @game = Game.new
     @game.player1 = current_user
     respond_to do |format|
       if @game.save
