@@ -1,0 +1,2 @@
+class ProvinceTemplate < ApplicationController
+end
