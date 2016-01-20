@@ -1,6 +1,6 @@
 class Province < ActiveRecord::Base
   belongs_to :factions
-  has_and_belongs_to :fleets
+  has_one :fleets
 
 # This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies

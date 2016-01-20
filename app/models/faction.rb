@@ -1,6 +1,6 @@
 class Faction < ActiveRecord::Base
   has_many :fleets
-  has_and_belongs_to :provinces
+  has_many :provinces
 
   @points = 0
 
