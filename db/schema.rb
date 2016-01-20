@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160118130909) do
+ActiveRecord::Schema.define(version: 20160120145131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,29 +19,19 @@ ActiveRecord::Schema.define(version: 20160118130909) do
   create_table "adjacencies", force: :cascade do |t|
     t.integer "province1_id"
     t.integer "province2_id"
-    t.integer "adjacency_number"
-  end
-
-  create_table "adjacenies", force: :cascade do |t|
-    t.integer "province1_id"
-    t.integer "province2_id"
   end
 
   create_table "factions", force: :cascade do |t|
     t.string  "name"
-    t.integer "player_id"
     t.boolean "alive"
-    t.integer "faction_number"
     t.integer "number_of_fleets"
+    t.integer "user_id"
   end
 
   create_table "fleets", force: :cascade do |t|
-    t.string  "name"
-    t.integer "position"
     t.integer "faction_id"
     t.boolean "alive"
-    t.integer "fleet_number"
-    t.integer "faction_number"
+    t.integer "province_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -56,13 +46,16 @@ ActiveRecord::Schema.define(version: 20160118130909) do
     t.boolean "completed"
   end
 
-  create_table "provinces", force: :cascade do |t|
+  create_table "province_template", force: :cascade do |t|
     t.string  "name"
     t.boolean "island"
+  end
+
+  create_table "provinces", force: :cascade do |t|
     t.integer "faction_id"
     t.integer "garrison_id"
-    t.integer "fleet_number"
-    t.integer "province_number"
+    t.integer "game_id"
+    t.integer "province_template_id"
   end
 
   create_table "users", force: :cascade do |t|
