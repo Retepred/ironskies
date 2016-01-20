@@ -97,6 +97,20 @@ ul li {
   font-size: 24px;
 }
 
+.whitebackgroundsmall {
+  border: 1px solid black;
+  opacity: 0.7;
+  background-color: white;
+  position: relative;
+  height: 9rem;
+  width: 60%;
+  left: 20%;
+  top: 9rem;
+  overflow: scroll;
+  font-family: 'calligraphyflf';
+  font-size: 24px;
+}
+
 .textbox {
   color: black;
   opacity: 0%;
@@ -148,3 +162,7 @@ a {
   top:1px;
 }
 
+.names {
+  opacity: 0.8;
+  border: 1px solid black;
+}

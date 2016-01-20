@@ -1,2 +1,17 @@
 <br>
 <center><p><%= link_to 'New Game', new_game_path(@game) %></p></center>
+
+
+<div class='main2'>
+  <div class="whitebackground">
+    <tbody>
+      <% @games.each do |game| %>
+      <tr>
+        <div>
+          <td><%= link_to game.name, game %></td>
+        </div>
+      </tr>
+      <% end %>
+    </tbody>
+  </div>
+</div>

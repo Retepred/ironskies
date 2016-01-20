@@ -2,15 +2,19 @@ class GamesController < ApplicationController
   before_action :authenticate_user!
   # load_and_authorize_resource
 
+  #@games = Game.all
+
   def index
+    @games = Game.all
   end
 
-  def show
-    @game = Game.last
+
+  def new
+    @game = Game.new
   end
 
   def create
-    @game = Game.new
+    @game = Game.new(game_params)
     @game.player1 = current_user
     respond_to do |format|
       if @game.save
@@ -29,7 +33,7 @@ class GamesController < ApplicationController
   # end
 
   def game_params
-    params.require(:game).permit(:game_name, :player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :username, :wins)
+    params.require(:game).permit(:name, :player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id)
   end
 
 

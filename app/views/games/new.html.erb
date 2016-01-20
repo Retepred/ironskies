@@ -23,11 +23,7 @@
  <div class="field">
    <%= f.label :player3_id %>
    <%= f.collection_select :player3_id, User.all.reject {|user| user == current_user}, :id, :username %>
- </div> 
- <div class="field">
-   <%= f.label :player3_id %>
-   <%= f.collection_select :player3_id, User.all.reject {|user| user == current_user}, :id, :username %>
- </div> 
+ </div>  
  <div class="field">
    <%= f.label :player4_id %>
    <%= f.collection_select :player4_id, User.all.reject {|user| user == current_user}, :id, :username %>
