@@ -77,9 +77,18 @@ ul li {
 }
 
 .main_menu {
-  position: fixed;
-  left: 30%;
-  top: 1%;
+  position: absolute;
+  left: 33%;
+  top: 1px;
+  display: inline;
+  padding: none;
+  border: none;
+}
+
+.play {
+  position: absolute;
+  left: 45%;
+  top: 3rem;
   display: inline;
 }
 
@@ -161,6 +170,30 @@ a {
   position:relative;
   top:1px;
 }
+
+.playButton {
+  background-color:#44c767;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.playButton:hover {
+  background-color:#5cbf2a;
+}
+.playButton:active {
+  position:relative;
+  top:1px;
+}
+
 
 .names {
   opacity: 0.8;
