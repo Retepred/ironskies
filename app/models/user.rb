@@ -4,13 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :games_as_player1, class_name: 'Game', foreign_key: :player1_id
-  has_many :games_as_player2, class_name: 'Game', foreign_key: :player2_id
-  has_many :games_as_player3, class_name: 'Game', foreign_key: :player3_id
-  has_many :games_as_player4, class_name: 'Game', foreign_key: :player4_id
-  has_many :games_as_player5, class_name: 'Game', foreign_key: :player5_id
-  has_many :games_as_player6, class_name: 'Game', foreign_key: :player6_id
-  has_many :games_as_player7, class_name: 'Game', foreign_key: :player7_id
+  has_many :playings
+  has_many :games, through: :playings
 
   # This section of code deals with finding the ids of players that own factions
   def factions

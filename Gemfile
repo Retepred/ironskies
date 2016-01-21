@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Peter's added gems!
 gem 'devise'
 gem 'cancan'
+gem 'acts_as_list'
+gem 'aasm'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -1,12 +1,23 @@
 class Game < ActiveRecord::Base
+  include AASM
 
-  belongs_to :player1, class_name: 'User'
-  belongs_to :player2, class_name: 'User'
-  belongs_to :player3, class_name: 'User'
-  belongs_to :player4, class_name: 'User'
-  belongs_to :player5, class_name: 'User'
-  belongs_to :player6, class_name: 'User'
-  belongs_to :player7, class_name: 'User'
+  has_many :playings
+  has_many :players, through: :playings, source: :user
 
+
+  aasm do
+    state :setup, initial: true
+    state :playing
+    state :completed
+
+    event :play do
+      transitions from: :setup, to: :playing
+    end
+
+    event :complete do
+      transitions from: :playing, to: :completed
+    end
+
+  end
   
 end

@@ -16,9 +16,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(game_params)
-    @game.player1 = current_user
-    @game.completed = false
+    @game = current_user.games.new(game_params)
     respond_to do |format|
       if @game.save
         flash[:notice] = "Game #{@game.name} was successfully created."

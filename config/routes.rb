@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   get "/users", to: "users#index"
 
   root to: "home#index"
-  resources :games
+  resources :games do
+    resources :players, controller: :playings
+  end
+
+
   resources :instructions
 
 
