@@ -1,13 +1,15 @@
 class GamesController < ApplicationController
   before_action :authenticate_user!
+  # has_many :provinces
   # load_and_authorize_resource
-
-  #@games = Game.all
 
   def index
     @games = Game.all
   end
 
+  def show
+    @game = Game.find(params[:id])
+  end
 
   def new
     @game = Game.new
@@ -16,6 +18,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     @game.player1 = current_user
+    @game.completed = false
     respond_to do |format|
       if @game.save
         flash[:notice] = "Game #{@game.name} was successfully created."

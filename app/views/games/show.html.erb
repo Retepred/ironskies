@@ -1,14 +1,30 @@
-<div class="show">
-
-
 <% if @move && @move.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
+<div id="error_explanation">
+  <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
 
-    <ul>
+  <ul>
     <% @move.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+    <li><%= message %></li>
     <% end %>
-    </ul>
-  </div>
+  </ul>
+</div>
 <% end %>
+
+
+<div class='main2'>
+  <div class="whitebackground">
+    <tbody>
+      <tr>
+         <b><p>Game name: <%= @game.name %></p></b>
+         <p>Game Completed: <%= @game.completed %></p>
+         <p>Player 1: <%= @game.player1_id %></p>
+         <p>Player 2: <%= @game.player2_id %></p>
+         <p>Player 3: <%= @game.player3_id %></p>
+         <p>Player 4: <%= @game.player4_id %></p>
+         <p>Player 5: <%= @game.player5_id %></p>
+         <p>Player 6: <%= @game.player6_id %></p>
+         <p>Player 7: <%= @game.player7_id %></p>
+     </tr>
+   </tbody>
+ </div>
+</div>
