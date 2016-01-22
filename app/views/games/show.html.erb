@@ -6,6 +6,8 @@
    <% @game.players.each do |player| %>
    <%= player.username %> <br>
 
+
+   <a class='newgamebutton' href=<%= game_path %>>Start Game</a><br>
    <% end %>
 
  </div>

@@ -334,7 +334,9 @@ a {
   top:1px;
 }
 
-
+.field {
+  text-align: center;
+}
 
 .names {
   opacity: 0.8;
