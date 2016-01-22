@@ -1,6 +1,5 @@
 class GamesController < ApplicationController
   before_action :authenticate_user!
-  # has_many :provinces
   # load_and_authorize_resource
 
   def index
@@ -22,7 +21,7 @@ class GamesController < ApplicationController
     respond_to do |format|
       if @game.save
         flash[:notice] = "Game #{@game.name} was successfully created."
-        format.html { redirect_to(action: "show", id:Game.last.id) }
+        format.html { redirect_to(action: "show", id:@game.id) }
         format.xml  { render :xml => @game, :status => :created, :location => @game }
       else
         format.html { render :action => "new" }
