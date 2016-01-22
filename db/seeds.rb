@@ -392,7 +392,6 @@ Adjacency.create(province1_id: 77, province2_id: 78)
 
 
 User.delete_all
-User.create(username: 'AI', email: 'ai@ironskies.example', password: 'aiaiaiai', password_confirmation: 'aiaiaiai')
 User.create(username: 'Bill', email: 'bill@ironskies.example', password: 'billbill', password_confirmation: 'billbill')
 User.create(username: 'Test1', email: 'test1@ironskies.example', password: 'testtest1', password_confirmation: 'testtest1')
 User.create(username: 'Test2', email: 'test2@ironskies.example', password: 'testtest2', password_confirmation: 'testtest2')
@@ -400,6 +399,7 @@ User.create(username: 'Test3', email: 'test3@ironskies.example', password: 'test
 User.create(username: 'Test4', email: 'test4@ironskies.example', password: 'testtest4', password_confirmation: 'testtest4')
 User.create(username: 'Test5', email: 'test5@ironskies.example', password: 'testtest5', password_confirmation: 'testtest5')
 User.create(username: 'Test6', email: 'test6@ironskies.example', password: 'testtest6', password_confirmation: 'testtest6')
+User.create(username: 'Test7', email: 'test@ironskies.example', password: 'testest7', password_confirmation: 'testtest7')
 
 
 

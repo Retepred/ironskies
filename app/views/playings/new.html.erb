@@ -14,7 +14,7 @@
   <div class="new">
     <div class="field">
       <%= f.label :user_id %>
-      <%= f.collection_select :user_id, User.all.reject {|user| Game.last.players.include? user}, :id, :username %>
+      <%= f.collection_select :user_id, User.all.reject {|user| @game.players.include? user}, :id, :username %>
     </div>
     <div class="actions">
       <%= f.button %>
