@@ -8,7 +8,7 @@
       <% @games.each do |game| %>
       <tr>
         <div>
-          <div class='gamelistbutton'><%= link_to game.name, game %></div>
+          <a class='gamelistbutton' href=<%= game_path(game) %>><%=game.name%></a>
         </div>
       </tr>
       <% end %>

@@ -14,14 +14,11 @@
 
 <div class='main2'>
   <div class="whitebackground">
-    <tbody>
-      <tr>
-         <b><p>Game name: <%= @game.name %></p></b>
-         <div class='newgamebutton'><%= link_to 'New Player', new_game_player_path(@game) %></div>
-   </tbody>
+   <b><p>Game name: <%= @game.name %></p></b>
+   <a class='newgamebutton' href=<%= new_game_player_path(@game) %>>Add Player</a><br>
 
    <% @game.players.each do |player| %>
-    <%= player.username %> <br>
+   <%= player.username %> <br>
 
    <% end %>
 

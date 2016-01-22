@@ -24,17 +24,21 @@
 <div class="main_menu">
   <nav>
       <ul>
-        <li class='myButton'> <%= link_to('Home', root_path) %> </li>
-        <li class='myButton'> <%= link_to('Instructions', instructions_path) %></li>
-        <li class='myButton'> <%= link_to('Your Profile', users_path) %></li>
+        <li>
+        <a class='myButton' href=<%= root_path %>>Home</a>
+        </li>
+        <li>
+        <a class='myButton' href=<%= instructions_path %>>Instructions</a>
+        </li>
+        <li>
+        <a class='myButton' href=<%= users_path %>>Your Profile</a>
+        </li>
       </ul>
   </nav>
 </div>
 
 <div class='play'>
-<u>
-  <li class='playButton'> <%= link_to('Play!', games_path) %> </li>
-</u>
+<a class='playButton' href=<%= games_path %>>Play!</a>
 </div>
 
 <%= yield %>
