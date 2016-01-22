@@ -6,6 +6,7 @@ gem 'devise'
 gem 'cancan'
 gem 'acts_as_list'
 gem 'aasm'
+gem 'pry-byebug'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

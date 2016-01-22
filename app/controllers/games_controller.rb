@@ -16,7 +16,9 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = current_user.games.new(game_params)
+    @game = Game.new(game_params)
+    @game.players << current_user
+
     respond_to do |format|
       if @game.save
         flash[:notice] = "Game #{@game.name} was successfully created."
@@ -32,9 +34,11 @@ class GamesController < ApplicationController
   # def user_params
   #   params.require(:user).permit(:game_name)
   # end
+  private
+  
 
   def game_params
-    params.require(:game).permit(:name, :player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id)
+    params.require(:game).permit(:name, :user_id)
   end
 
 

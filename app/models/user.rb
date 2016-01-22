@@ -16,8 +16,4 @@ class User < ActiveRecord::Base
     factions.pluck(:id).flatten
   end
 
-  def faction
-    Faction.where("id in (?)", faction_ids)
-  end
-
 end

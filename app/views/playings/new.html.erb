@@ -1,0 +1,24 @@
+<%= form_for([@game, @playing], url: game_players_path(@game, @player)) do |f| %>
+  <% if @playing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this playing from being saved:</h2>
+
+      <ul>
+        <% @playing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="new">
+    <div class="field">
+      <%= f.label :user_id %>
+      <%= f.collection_select :user_id, User.all.reject {|user| user == current_user}, :id, :username %>
+    </div>
+    <div class="actions">
+      <%= f.button %>
+    </div>
+  <% end %>
+  <%= link_to 'Back', @game %>
+</div>
