@@ -10,11 +10,11 @@ class Game < ActiveRecord::Base
     state :playing
     state :completed
 
-    event :play do
+    event :start do
       transitions from: :setup, to: :playing
     end
 
-    event :complete do
+    event :end do
       transitions from: :playing, to: :completed
     end
 

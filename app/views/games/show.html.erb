@@ -6,8 +6,8 @@
    <% @game.players.each do |player| %>
    <%= player.username %> <br>
 
+   <%= link_to "Start Game", start_game_path(@game) , method: :put, :class => 'newgamebutton'%>
 
-   <a class='newgamebutton' href=<%= game_path %>>Start Game</a><br>
    <% end %>
 
  </div>

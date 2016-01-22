@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   resources :games do
     resources :players, controller: :playings
+    member do
+      put :start
+      put :end
+    end
   end
 
   resources :instructions
