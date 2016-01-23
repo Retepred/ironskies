@@ -10,37 +10,39 @@
 </head>
 <body>
 
-<div class='login'>
-  <% if user_signed_in? %>
-    <%= current_user.username %>
-    <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign In", new_user_session_path %>
-    <%= link_to "Register", new_user_registration_path %>
-  <% end %>
-</div>
 
-
-<div class="main_menu">
-  <nav>
+  <div class="main_menu">
+    <nav>
       <ul>
         <li>
-        <a class='myButton' href=<%= root_path %>>Home</a>
+          <a class='myButton' href=<%= root_path %>>Home</a>
         </li>
         <li>
-        <a class='myButton' href=<%= instructions_path %>>Instructions</a>
+          <a class='myButton' href=<%= instructions_path %>>Instructions</a>
         </li>
         <li>
-        <a class='playButton' href=<%= games_path %>>Play!</a>
+          <a class='playButton' href=<%= games_path %>>Play!</a>
+        </li>
+<!--         <li>
+          <a class='myButton' href=<%= users_path %>>Your Profile</a>
+        </li> -->
+        <li>
+          <div class='myButton'>
+            <% if user_signed_in? %>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+            <% else %>
+            <%= link_to "Sign In", new_user_session_path %>
+            <%= link_to "Register", new_user_registration_path %>
+            <% end %>
+          </div>
         </li>
         <li>
-        <a class='myButton' href=<%= users_path %>>Your Profile</a>
         </li>
       </ul>
-  </nav>
-</div>
+    </nav>
+  </div>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>

@@ -15,7 +15,7 @@
 </div>
 
 <% else %>
-<div class='game'>
+<div class='game_menu'>
 
   <div class='announcements'>
     <img class='announcementspic' src="/announcementsborder.png">
@@ -24,12 +24,16 @@
     </div>
   </div>
 
-  <div class='province'>
-    London
+  <div class='fleet'>
+    Example fleet 1
     <%= button_to 'attack', move_attack_path, method: :post %>
     <%= button_to 'defend', move_attack_path, method: :post %>
     <%= button_to 'support', move_attack_path, method: :post %>
   </div>
+
+</div>
+<div class='game'>
+  <img class='gamepic' src="/gamebackground.png">
 
 </div>
 <% end %>
