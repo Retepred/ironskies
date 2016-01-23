@@ -40,6 +40,51 @@ a {
   display: block;
 }
 
+.announcements {
+  position: relative;
+  color: black;
+  opacity: 0%;
+  overflow: scroll;
+  height: 10rem;
+  width: 16%;
+  left: 0%;
+  top: 1rem;
+  font-family: 'calligraphyflf';
+  font-size: 18px;
+}
+
+.announcement_text {
+  position: absolute;
+  width:100%;
+  overflow:scroll;
+}
+
+.announcementspic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.province {
+  position: relative;
+  border: 1px solid black;
+  width: 5%;
+  background-color: white;
+  left: 45%;
+  top: 40%;
+}
+
+.game {
+  top: 1rem;
+  border: 1px solid black;
+  position: relative;
+  height:40rem;
+  width: 90%;
+  left: 5%;
+  background: url("/gamebackground.png") no-repeat center center fixed; 
+  max-width:100%;
+}
+
 .main2 {
   top: 5rem;
   border: 1px solid black;
@@ -47,11 +92,12 @@ a {
   height:30rem;
   width: 60%;
   left: 20%;
-  background: url("http://cdn.speckyboy.com/wp-content/uploads/2013/01/FASA-10.jpg") no-repeat center center fixed; 
+  background: url("/gamebackground.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: scroll;
 }
 
 .mainhome {
@@ -196,14 +242,14 @@ a {
   background-color:#44c767;
   -moz-border-radius:28px;
   -webkit-border-radius:28px;
-  border-radius:28px;
+  border-radius:25px;
   border:1px solid #18ab29;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
   font-family:Arial;
   font-size:17px;
-  padding:16px 31px;
+  padding:7px 13px;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
 }

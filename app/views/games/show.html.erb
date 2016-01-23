@@ -1,3 +1,4 @@
+<% if @game.aasm_state == 'setup' %>
 <div class='main2'>
   <div class="whitebackground">
    <b><p>Game name: <%= @game.name %></p></b>
@@ -12,3 +13,23 @@
 
  </div>
 </div>
+
+<% else %>
+<div class='game'>
+
+  <div class='announcements'>
+    <img class='announcementspic' src="/announcementsborder.png">
+    <div class='announcement_text'>
+      <b>Announcements!</b>
+    </div>
+  </div>
+
+  <div class='province'>
+    London
+    <%= button_to 'attack', move_attack_path, method: :post %>
+    <%= button_to 'defend', move_attack_path, method: :post %>
+    <%= button_to 'support', move_attack_path, method: :post %>
+  </div>
+
+</div>
+<% end %>

@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: 'registrations' }
   get "/users", to: "users#index"
+  post 'move/attack'
+  post 'move/defend'
+  post 'move/support'
 
   root to: "home#index"
 
