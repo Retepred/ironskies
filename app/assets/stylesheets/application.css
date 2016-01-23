@@ -40,6 +40,10 @@ a {
   display: block;
 }
 
+.new {
+  
+}
+
 .announcements {
   position: relative;
   color: black;
@@ -263,7 +267,7 @@ a {
 }
 
 .playButton {
-  background-color:#44c767;
+  background-color:#74ad5a;
   -moz-border-radius:28px;
   -webkit-border-radius:28px;
   border-radius:25px;
@@ -285,7 +289,7 @@ a {
   top:1px;
 }
 
-.newgamebutton {
+.gamelistbutton {
   -moz-box-shadow:inset 0px 1px 0px 0px #868ccc;
   -webkit-box-shadow:inset 0px 1px 0px 0px #868ccc;
   box-shadow:inset 0px 1px 0px 0px #868ccc;
@@ -307,7 +311,7 @@ a {
   padding:6px 12px;
   text-decoration:none;
 }
-.newgamebutton:hover {
+.gamelistbutton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #514ba3), color-stop(1, #5b5bab));
   background:-moz-linear-gradient(top, #514ba3 5%, #5b5bab 100%);
   background:-webkit-linear-gradient(top, #514ba3 5%, #5b5bab 100%);
@@ -317,13 +321,15 @@ a {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#514ba3', endColorstr='#5b5bab',GradientType=0);
   background-color:#514ba3;
 }
-.newgamebutton:active {
+.gamelistbutton:active {
   position:relative;
   top:1px;
 }
 
 
-.gamelistbutton {
+.newgamebutton {
+  left: 35%;
+  position: relative;
   -moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
   -webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
   box-shadow:inset 0px 1px 0px 0px #9acc85;
@@ -345,7 +351,7 @@ a {
   padding:6px 12px;
   text-decoration:none;
 }
-.gamelistbutton:hover {
+.newgamebutton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
   background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
   background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
@@ -355,7 +361,7 @@ a {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
   background-color:#68a54b;
 }
-.gamelistbutton:active {
+.newgamebutton:active {
   position:relative;
   top:1px;
 }

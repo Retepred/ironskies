@@ -5,6 +5,8 @@
   <div class='textbox'>
     <tbody>
       <div class='newgamebutton'><%= link_to 'New Game', new_game_path(@game) %></div>
+      <br>
+      <p><b>List of Games</b></p>
       <% @games.each do |game| %>
       <tr>
         <div>

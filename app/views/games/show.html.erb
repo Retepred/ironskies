@@ -2,10 +2,13 @@
 <div class='main2'>
   <div class="whitebackground">
    <b><p>Game name: <%= @game.name %></p></b>
+   <b>Players:</b>
+   <% @game.players.each do |player| %>
+   <%= player.username %>
+   <br>
+
    <a class='newgamebutton' href=<%= new_game_player_path(@game) %>>Add Player</a><br>
 
-   <% @game.players.each do |player| %>
-   <%= player.username %> <br>
 
    <%= link_to "Start Game", start_game_path(@game) , method: :put, :class => 'newgamebutton'%>
 
@@ -33,7 +36,8 @@
 
 </div>
 <div class='game'>
-  <img class='gamepic' src="/gamebackground.png">
+  <img class='gamepic' src="/gamebackgroundcolours.png">
+<!--   <img class='announcementspic' src="/gameborder.png"> -->
 
 </div>
 <% end %>
