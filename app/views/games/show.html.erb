@@ -1,25 +1,27 @@
 <% if @game.aasm_state == 'setup' %>
 <div class='main2'>
+
   <div class="whitebackground">
+
    <b><p>Game name: <%= @game.name %></p></b>
    <b>Players:</b>
+   <br>
    <% @game.players.each do |player| %>
    <%= player.username %>
    <br>
-
+   <% end %>
    <a class='newgamebutton' href=<%= new_game_player_path(@game) %>>Add Player</a><br>
-
-
    <%= link_to "Start Game", start_game_path(@game) , method: :put, :class => 'newgamebutton'%>
 
-   <% end %>
-
  </div>
+
 </div>
 
 <% else %>
-<div class='game_menu'>
 
+<% @game.turn_check %>
+
+<div class='game_menu'>
   <div class='announcements'>
     <img class='announcementspic' src="/announcementsborder.png">
     <div class='announcement_text'>

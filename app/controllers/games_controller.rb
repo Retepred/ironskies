@@ -3,7 +3,6 @@ class GamesController < ApplicationController
   before_action :set_game, only: [:start]
   # load_and_authorize_resource
 
-
   def start
     redirect_to games_path if @game.start!
   end
