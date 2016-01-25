@@ -1,5 +1,8 @@
 class Province < ActiveRecord::Base
   belongs_to :factions
+  belongs_to :game
+  belongs_to :province_template
+  
   has_one :fleets
 
   scope :islands, -> { where(island: true)}
