@@ -22,6 +22,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     @game.players << current_user
+    @game.turn_number = 0
 
     respond_to do |format|
       if @game.save
@@ -47,6 +48,35 @@ class GamesController < ApplicationController
 
   def game_params
     params.require(:game).permit(:name, :user_id)
+  end
+
+
+
+
+  def add_ship
+  end
+
+  def number_of_ships_allowed
+  end
+
+  def check_ships
+    if number_of_ships_allowed < ship_number
+      until ship_number == number_of_ships_allowed
+        add_ship
+      end
+    elsif number_of_ships_allowed == ship_number
+    elsif number_of_ships_allowed > ship_number
+    else
+    end
+  end
+
+  def turn_check
+    if @game.turn_number == 0
+    elsif @game.turn_number.even? == true
+    elsif @game.turn_number.even? == false
+      check_ships
+    end
+      
   end
 
 

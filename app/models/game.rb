@@ -20,8 +20,17 @@ class Game < ActiveRecord::Base
 
   end
 
+  def add_ship
+  end
+
+  def number_of_ships_allowed
+  end
+
   def check_ships
     if number_of_ships_allowed < ship_number
+      until ship_number == number_of_ships_allowed
+        add_ship
+      end
     elsif number_of_ships_allowed == ship_number
     elsif number_of_ships_allowed > ship_number
     else
@@ -29,9 +38,9 @@ class Game < ActiveRecord::Base
   end
 
   def turn_check
-    if turn_count == 0
-    elsif turn_count.even? == true
-    elsif turn_count.even? == false
+    if self.turn_number == 0
+    elsif self.turn_number.even? == true
+    elsif self.turn_number.even? == false
       check_ships
     end
       
