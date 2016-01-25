@@ -1,11 +1,12 @@
 class Province < ActiveRecord::Base
-  belongs_to :factions
+  belongs_to :faction
   belongs_to :game
   belongs_to :province_template
-  
-  has_one :fleets
+  belongs_to :fleet
 
-  scope :islands, -> { where(island: true)}
+  scope :random, -> { order("RANDOM()") }
+  scope :unoccupied, -> { where(fleet_id: nil) }
+  scope :islands, -> { joins(:province_template).where(province_templates: { island: true } ) }
 
 # This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies

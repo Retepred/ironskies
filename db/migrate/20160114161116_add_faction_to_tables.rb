@@ -3,7 +3,7 @@ class AddFactionToTables < ActiveRecord::Migration
     create_table :factions do |t|
       t.string :name
       t.integer :player_id
-      t.boolean :alive
+      t.boolean :alive, default: true
     end
   end
 end

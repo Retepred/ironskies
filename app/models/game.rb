@@ -3,15 +3,24 @@ class Game < ActiveRecord::Base
 
   has_many :playings
   has_many :players, through: :playings, source: :user
-
+  has_many :provinces
+  has_many :factions, through: :playings
 
   aasm do
     state :setup, initial: true
+    state :generating_world
     state :playing
     state :completed
 
     event :start do
-      transitions from: :setup, to: :playing
+      after do
+        generate_world
+      end
+      transitions from: :setup, to: :generating_world
+    end
+
+    event :generated do
+      transitions from: :generating_world, to: :playing
     end
 
     event :end do
@@ -39,11 +48,6 @@ class Game < ActiveRecord::Base
   def add_ship
   end
 
-  def provinces
-    Province.where(faction_id: current_user.id).find_each do |province|
-    province.select(island: true)
-    end
-  end
 
   def number_of_ships_allowed
     islands = 0
@@ -69,5 +73,34 @@ class Game < ActiveRecord::Base
     end
       
   end
+
+  # private
+  def generate_world
+    # create provinces for all the province templates
+    ProvinceTemplate.all.each do |province_template|
+      provinces.create!(province_template: province_template)
+    end
+
+    # find all the factions and allocate them to islands
+    factions = self.factions.to_a
+    self.provinces.islands.each do |province|     
+      if faction = factions.pop
+        province.faction_id = faction.id
+        province.save!
+        Fleet.create!(faction: faction, province: province)
+        if province = province.adjacent_provinces.random.unoccupied.first 
+          province.faction_id = faction.id
+          province.save!
+          Fleet.create!(faction: faction, province: province)        
+        end
+      end
+    end
+
+    # change the state of the game to be ready to play
+    generated!
+
+  end
+
+
   
 end

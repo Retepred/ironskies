@@ -1,7 +1,7 @@
 class Faction < ActiveRecord::Base
   has_many :fleets
   has_many :provinces
-
+  belongs_to :playing
   
   # This section of code deals with finding the provinces owned by a faction, call owned_province_ids
     def provinces

@@ -4,7 +4,7 @@ class AddFLeetToTables < ActiveRecord::Migration
       t.string :name
       t.integer :position
       t.integer :faction_id
-      t.boolean :alive
+      t.boolean :alive, default: true
     end
   end
 end
