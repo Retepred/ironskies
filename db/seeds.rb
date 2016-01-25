@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Faction.delete_all
+# Faction.delete_all
 # Faction.create(name: 'Old British Empire', user_id: 1, alive: true, number_of_fleets: 3)
 # Faction.create(name: "People's Republic of Scotland", user_id: 2, number_of_fleets: 2, alive: true)
 # Faction.create(name: 'French Expeditionary Force', user_id: 3, number_of_fleets: 2, alive: true)
@@ -380,15 +380,9 @@ Adjacency.create(province1_id: 76, province2_id: 77)
 Adjacency.create(province1_id: 77, province2_id: 78)
 
 
-
-
-
-# Fleet.delete_all
-# Fleet.create(name: 'British 1st Fleet', position: 1, faction_id: 1, alive: true, faction_number: 1, fleet_number: 1)
-# Fleet.create(name: 'British 2nd Fleet', position: 44, faction_id: 1, alive: true, faction_number: 1, fleet_number: 2)
-# Fleet.create(name: 'British 1st Fleet', position: 36, faction_id: 1, alive: true, faction_number: 1, fleet_number: 3)
-# Fleet.create(name: 'British 2nd Fleet', position: 37, faction_id: 1, alive: true, faction_number: 1, fleet_number: 4)
-
+# ////------------------------------------------------------------------------------------------------
+# TESTING DATA BELOW, NEEDED DATA ABOVE
+# ////------------------------------------------------------------------------------------------------
 
 
 User.delete_all
@@ -403,9 +397,112 @@ User.create(username: 'Test7', email: 'test@ironskies.example', password: 'teste
 
 
 
+Game.delete_all
+Game.create(name: 'testgame', aasm_state: 'playing', turn_number: 0)
 
+Playing.delete_all
+Playing.create(game_id: 1, user_id: 1)
+Playing.create(game_id: 1, user_id: 2)
+Playing.create(game_id: 1, user_id: 3)
+Playing.create(game_id: 1, user_id: 4)
+Playing.create(game_id: 1, user_id: 5)
+Playing.create(game_id: 1, user_id: 6)
+Playing.create(game_id: 1, user_id: 7)
 
+Fleet.delete_all
+Fleet.create(faction_id: 1, alive: true, province_id: 1)
+Fleet.create(faction_id: 2, alive: true, province_id: 2)
+Fleet.create(faction_id: 3, alive: true, province_id: 3)
+Fleet.create(faction_id: 4, alive: true, province_id: 4)
+Fleet.create(faction_id: 5, alive: true, province_id: 5)
+Fleet.create(faction_id: 6, alive: true, province_id: 6)
+Fleet.create(faction_id: 7, alive: true, province_id: 7)
 
+Faction.delete_all
+Faction.create(name: 'British Empire', alive: true, number_of_fleets: 1, user_id: 1)
+Faction.create(name: 'French Empire', alive: true, number_of_fleets: 1, user_id: 2)
+Faction.create(name: 'German Empire', alive: true, number_of_fleets: 1, user_id: 3)
+Faction.create(name: 'Russian Empire', alive: true, number_of_fleets: 1, user_id: 4)
+Faction.create(name: 'Korean Empire', alive: true, number_of_fleets: 1, user_id: 5)
+Faction.create(name: 'People Empire', alive: true, number_of_fleets: 1, user_id: 6)
+Faction.create(name: 'Arghblargh Empire', alive: true, number_of_fleets: 1, user_id: 7)
 
-
-
+Province.delete_all
+Province.create(province_template_id: 1, game_id: 1, faction_id: 1, garrison_id: 1)
+Province.create(province_template_id: 2, game_id: 1, faction_id: 2, garrison_id: 2)
+Province.create(province_template_id: 3, game_id: 1, faction_id: 3, garrison_id: 3)
+Province.create(province_template_id: 4, game_id: 1, faction_id: 4, garrison_id: 4)
+Province.create(province_template_id: 5, game_id: 1, faction_id: 5, garrison_id: 5)
+Province.create(province_template_id: 6, game_id: 1, faction_id: 6, garrison_id: 6)
+Province.create(province_template_id: 7, game_id: 1, faction_id: 7, garrison_id: 7)
+Province.create(province_template_id: 8, game_id: 1)
+Province.create(province_template_id: 9, game_id: 1)
+Province.create(province_template_id: 10, game_id: 1)
+Province.create(province_template_id: 11, game_id: 1)
+Province.create(province_template_id: 12, game_id: 1)
+Province.create(province_template_id: 13, game_id: 1)
+Province.create(province_template_id: 14, game_id: 1)
+Province.create(province_template_id: 15, game_id: 1)
+Province.create(province_template_id: 16, game_id: 1)
+Province.create(province_template_id: 17, game_id: 1)
+Province.create(province_template_id: 18, game_id: 1)
+Province.create(province_template_id: 19, game_id: 1)
+Province.create(province_template_id: 20, game_id: 1)
+Province.create(province_template_id: 21, game_id: 1)
+Province.create(province_template_id: 22, game_id: 1)
+Province.create(province_template_id: 23, game_id: 1)
+Province.create(province_template_id: 24, game_id: 1)
+Province.create(province_template_id: 25, game_id: 1)
+Province.create(province_template_id: 26, game_id: 1)
+Province.create(province_template_id: 27, game_id: 1)
+Province.create(province_template_id: 28, game_id: 1)
+Province.create(province_template_id: 29, game_id: 1)
+Province.create(province_template_id: 30, game_id: 1)
+Province.create(province_template_id: 31, game_id: 1)
+Province.create(province_template_id: 32, game_id: 1)
+Province.create(province_template_id: 33, game_id: 1)
+Province.create(province_template_id: 34, game_id: 1)
+Province.create(province_template_id: 35, game_id: 1)
+Province.create(province_template_id: 36, game_id: 1)
+Province.create(province_template_id: 37, game_id: 1)
+Province.create(province_template_id: 38, game_id: 1)
+Province.create(province_template_id: 39, game_id: 1)
+Province.create(province_template_id: 40, game_id: 1)
+Province.create(province_template_id: 41, game_id: 1)
+Province.create(province_template_id: 42, game_id: 1)
+Province.create(province_template_id: 43, game_id: 1)
+Province.create(province_template_id: 44, game_id: 1)
+Province.create(province_template_id: 45, game_id: 1)
+Province.create(province_template_id: 46, game_id: 1)
+Province.create(province_template_id: 47, game_id: 1)
+Province.create(province_template_id: 48, game_id: 1)
+Province.create(province_template_id: 49, game_id: 1)
+Province.create(province_template_id: 50, game_id: 1)
+Province.create(province_template_id: 51, game_id: 1)
+Province.create(province_template_id: 52, game_id: 1)
+Province.create(province_template_id: 53, game_id: 1)
+Province.create(province_template_id: 54, game_id: 1)
+Province.create(province_template_id: 55, game_id: 1)
+Province.create(province_template_id: 56, game_id: 1)
+Province.create(province_template_id: 57, game_id: 1)
+Province.create(province_template_id: 58, game_id: 1)
+Province.create(province_template_id: 59, game_id: 1)
+Province.create(province_template_id: 60, game_id: 1)
+Province.create(province_template_id: 61, game_id: 1)
+Province.create(province_template_id: 62, game_id: 1)
+Province.create(province_template_id: 63, game_id: 1)
+Province.create(province_template_id: 64, game_id: 1)
+Province.create(province_template_id: 65, game_id: 1)
+Province.create(province_template_id: 66, game_id: 1)
+Province.create(province_template_id: 67, game_id: 1)
+Province.create(province_template_id: 68, game_id: 1)
+Province.create(province_template_id: 69, game_id: 1)
+Province.create(province_template_id: 70, game_id: 1)
+Province.create(province_template_id: 71, game_id: 1)
+Province.create(province_template_id: 72, game_id: 1)
+Province.create(province_template_id: 73, game_id: 1)
+Province.create(province_template_id: 74, game_id: 1)
+Province.create(province_template_id: 75, game_id: 1)
+Province.create(province_template_id: 76, game_id: 1)
+Province.create(province_template_id: 77, game_id: 1)
+Province.create(province_template_id: 78, game_id: 1)

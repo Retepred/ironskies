@@ -20,10 +20,34 @@ class Game < ActiveRecord::Base
 
   end
 
+  def time_check
+    @time = Time.now
+    @hour = @time.hour
+    if @hour == 12
+      self.turn_number += 1
+      self.compute_moves
+      @hour
+    else
+      puts "GREAT!"
+      @hour
+    end
+  end
+
+  def compute_moves
+  end
+
   def add_ship
   end
 
+  def provinces
+    Province.where(faction_id: current_user.id).find_each do |province|
+    province.select(island: true)
+    end
+  end
+
   def number_of_ships_allowed
+    islands = 0
+
   end
 
   def check_ships

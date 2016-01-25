@@ -6,14 +6,11 @@ class User < ActiveRecord::Base
 
   has_many :playings
   has_many :games, through: :playings
+  has_many :factions
 
-  # This section of code deals with finding the ids of players that own factions
-  def factions
-    Faction.where("factions.player_id = :id", id: id)
-  end
 
-  def faction_ids
-    factions.pluck(:id).flatten
-  end
+  # def faction_ids
+  #   factions.pluck(:id).flatten
+  # end
 
 end
