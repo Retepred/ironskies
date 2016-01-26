@@ -396,26 +396,17 @@ u8 = User.create(username: 'Test7', email: 'test7@ironskies.example', password: 
 
 
 Game.delete_all
-g = Game.create(name: 'testgame', aasm_state: 'playing', turn_number: 0)
+g = Game.create(name: 'testgame', aasm_state: 'setup', turn_number: 0)
 
 Playing.delete_all
-p1 = Playing.create(game_id: g.id, user_id: p1.id)
-p2 = Playing.create(game_id: g.id, user_id: p2.id)
-p3 = Playing.create(game_id: g.id, user_id: p3.id)
-p4 = Playing.create(game_id: g.id, user_id: p4.id)
-p5 = Playing.create(game_id: g.id, user_id: p5.id)
-p6 = Playing.create(game_id: g.id, user_id: p6.id)
-p7 = Playing.create(game_id: g.id, user_id: p7.id)
-
-Fleet.delete_all
-fl1 = Fleet.create(faction_id: f1.id, alive: true)
-fl2 = Fleet.create(faction_id: f2.id, alive: true)
-fl3 = Fleet.create(faction_id: f3.id, alive: true)
-fl4 = Fleet.create(faction_id: f4.id, alive: true)
-fl5 = Fleet.create(faction_id: f5.id, alive: true)
-fl6 = Fleet.create(faction_id: f6.id, alive: true)
-fl7 = Fleet.create(faction_id: f7.id, alive: true)
-fl8 = Fleet.create(faction_id: f8.id, alive: true)
+p1 = Playing.create(game_id: g.id, user_id: u1.id)
+p2 = Playing.create(game_id: g.id, user_id: u2.id)
+p3 = Playing.create(game_id: g.id, user_id: u3.id)
+p4 = Playing.create(game_id: g.id, user_id: u4.id)
+p5 = Playing.create(game_id: g.id, user_id: u5.id)
+p6 = Playing.create(game_id: g.id, user_id: u6.id)
+p7 = Playing.create(game_id: g.id, user_id: u7.id)
+p8 = Playing.create(game_id: g.id, user_id: u8.id)
 
 Faction.delete_all
 f1 = Faction.create(alive: true, number_of_fleets: 1, playing_id: p1.id)
@@ -426,6 +417,16 @@ f5 = Faction.create(alive: true, number_of_fleets: 1, playing_id: p5.id)
 f6 = Faction.create(alive: true, number_of_fleets: 1, playing_id: p6.id)
 f7 = Faction.create(alive: true, number_of_fleets: 1, playing_id: p7.id)
 f8 = Faction.create(alive: true, number_of_fleets: 1, playing_id: p8.id)
+
+Fleet.delete_all
+fl1 = Fleet.create(faction_id: f1.id, alive: true)
+fl2 = Fleet.create(faction_id: f2.id, alive: true)
+fl3 = Fleet.create(faction_id: f3.id, alive: true)
+fl4 = Fleet.create(faction_id: f4.id, alive: true)
+fl5 = Fleet.create(faction_id: f5.id, alive: true)
+fl6 = Fleet.create(faction_id: f6.id, alive: true)
+fl7 = Fleet.create(faction_id: f7.id, alive: true)
+fl8 = Fleet.create(faction_id: f8.id, alive: true)
 
 Province.delete_all
 Province.create(province_template_id: pr1.id, game_id: g.id, faction_id: f1.id, fleet_id: fl1.id)
