@@ -45,27 +45,41 @@ class Game < ActiveRecord::Base
   def compute_moves
   end
 
-  def add_ship(user)
+  def remove_ship(user)
     player = Playing.where(user_id: user.id)
     current_player = player.where(game_id: self.id)
     current_faction = Faction.where(playing_id: current_player)
-    self.provinces.islands.each do |province| 
-      if province = province.adjacent_provinces.random.unoccupied.first 
-        province.faction_id = faction.id
-        province.save!
-        Fleet.create!(faction: faction, province: province)        
-      end
+    fleet_list = Fleet.where(faction_id: current_faction)
+    fleets = fleet_list.random
+    fleets.pop
+  end
+
+  def add_fleet(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    faction = Faction.where(playing_id: current_player).first
+    province = Province.where(faction_id: faction).order("RANDOM()").first
+    if province = province.adjacent_provinces.random.unoccupied.first
+      Fleet.create!(faction: faction, province: province)
     end
   end
 
-  def remove_ship(user)
+  def remove_fleet(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    current_faction = Faction.where(playing_id: current_player).first
+    fleet = Fleet.where(faction_id: current_faction).order("RANDOM()").first
+    puts fleet
+    fleet.alive = false
+    puts fleet
+    fleet.save
   end
 
   def owned_provinces(user)
     player = Playing.where(user_id: user.id)
     current_player = player.where(game_id: self.id)
     current_faction = Faction.where(playing_id: current_player)
-    province_list = Province.where(faction_id: current_faction)
+    Province.where(faction_id: current_faction)
   end
 
   def province_number(user)
@@ -76,7 +90,7 @@ class Game < ActiveRecord::Base
     player = Playing.where(user_id: user.id)
     current_player = player.where(game_id: self.id)
     current_faction = Faction.where(playing_id: current_player)
-    fleet_list = Fleet.where(faction_id: current_faction)
+    Fleet.where(faction_id: current_faction, alive: true)
   end
 
   def fleet_number(user)
@@ -87,19 +101,25 @@ class Game < ActiveRecord::Base
     province_number(user) * 2
   end
 
+  def changes(user)
+    fleet_number(user) - number_of_fleets_allowed(user)
+  end
+
   def check_fleets(user)
-    if number_of_fleets_allowed(user) < fleet_number(user)
-      until fleet_number(user) == number_of_fleets_allowed(user)
-        add_ship(user)
+    changes = fleet_number(user) - number_of_fleets_allowed(user)
+    puts "#{fleet_number(user)} #{number_of_fleets_allowed(user)}"
+    if changes < 0
+      puts 'get to iff?'
+      (changes * -1).times do
+        add_fleet(user)
       end
-    elsif number_of_fleets_allowed(user) == fleet_number(user)
-    elsif number_of_fleets_allowed(user) > fleet_number(user)
-      until fleet_number(user) == number_of_fleets_allowed(user)
-        remove_ship(user)
+    elsif changes > 0
+      puts 'get ere?'
+      changes.times do
+        remove_fleet(user)
       end
-    else
     end
-    puts 'grand'
+    puts fleet_number(user)
   end
 
   def turn_check
