@@ -45,13 +45,8 @@ class Game < ActiveRecord::Base
   def compute_moves
   end
 
-  def remove_ship(user)
-    player = Playing.where(user_id: user.id)
-    current_player = player.where(game_id: self.id)
-    current_faction = Faction.where(playing_id: current_player)
-    fleet_list = Fleet.where(faction_id: current_faction)
-    fleets = fleet_list.random
-    fleets.pop
+  def move_fleet(province, fleet)
+    fleet.province = province
   end
 
   def add_fleet(user)
@@ -62,6 +57,14 @@ class Game < ActiveRecord::Base
     if province = province.adjacent_provinces.random.unoccupied.first
       Fleet.create!(faction: faction, province: province)
     end
+  end
+
+  def update_number_of_fleets(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    faction = Faction.where(playing_id: current_player).first
+    faction.number_of_fleets = fleet_number(user)
+    faction.save
   end
 
   def remove_fleet(user)
