@@ -45,24 +45,61 @@ class Game < ActiveRecord::Base
   def compute_moves
   end
 
-  def add_ship
-  end
-
-
-  def number_of_ships_allowed
-    islands = 0
-
-  end
-
-  def check_ships
-    if number_of_ships_allowed < ship_number
-      until ship_number == number_of_ships_allowed
-        add_ship
+  def add_ship(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    current_faction = Faction.where(playing_id: current_player)
+    self.provinces.islands.each do |province| 
+      if province = province.adjacent_provinces.random.unoccupied.first 
+        province.faction_id = faction.id
+        province.save!
+        Fleet.create!(faction: faction, province: province)        
       end
-    elsif number_of_ships_allowed == ship_number
-    elsif number_of_ships_allowed > ship_number
+    end
+  end
+
+  def remove_ship(user)
+  end
+
+  def owned_provinces(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    current_faction = Faction.where(playing_id: current_player)
+    province_list = Province.where(faction_id: current_faction)
+  end
+
+  def province_number(user)
+    owned_provinces(user).to_a.length
+  end
+
+  def owned_fleets(user)
+    player = Playing.where(user_id: user.id)
+    current_player = player.where(game_id: self.id)
+    current_faction = Faction.where(playing_id: current_player)
+    fleet_list = Fleet.where(faction_id: current_faction)
+  end
+
+  def fleet_number(user)
+    owned_fleets(user).to_a.length
+  end
+
+  def number_of_fleets_allowed(user)
+    province_number(user) * 2
+  end
+
+  def check_fleets(user)
+    if number_of_fleets_allowed(user) < fleet_number(user)
+      until fleet_number(user) == number_of_fleets_allowed(user)
+        add_ship(user)
+      end
+    elsif number_of_fleets_allowed(user) == fleet_number(user)
+    elsif number_of_fleets_allowed(user) > fleet_number(user)
+      until fleet_number(user) == number_of_fleets_allowed(user)
+        remove_ship(user)
+      end
     else
     end
+    puts 'grand'
   end
 
   def turn_check
@@ -71,7 +108,7 @@ class Game < ActiveRecord::Base
     elsif self.turn_number.even? == false
       check_ships
     end
-      
+
   end
 
   # private
@@ -88,8 +125,8 @@ class Game < ActiveRecord::Base
         province.faction_id = faction.id
         province.save!
         Fleet.create!(faction: faction, province: province)
-        if province = province.adjacent_provinces.random.unoccupied.first 
-          province.faction_id = faction.id
+        if province = province.reload.adjacent_provinces.random.unoccupied.first
+          province.faction_id = faction.id if province.island?
           province.save!
           Fleet.create!(faction: faction, province: province)        
         end
