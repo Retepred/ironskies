@@ -18,6 +18,7 @@
         <%= f.label :name %>
         <%= f.text_field :name, :maxlength => 10 %>
       </div>
+      <%= f.submit :class => 'newgamebutton'%>
       <% end %>
 
       <a class='newgamebutton' href=<%= games_path %>>Back</a><br>

@@ -15,7 +15,6 @@ class MovesController < ApplicationController
       end
     end
   end
-
   
   
 
