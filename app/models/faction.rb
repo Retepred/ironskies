@@ -17,14 +17,6 @@ class Faction < ActiveRecord::Base
     end
 
   # This section of code deals with finding the fleets owned by a faction, call fleet_ids
-    def fleets
-      Fleet.where("fleets.alive = true and fleets.faction_number = :id", id: id)
-    end
-
-    def fleet_ids
-      fleets.pluck(:fleet_number).flatten
-    end
-
     def owned_provinces
       Fleet.where("id in (?)", fleet_ids)
     end  

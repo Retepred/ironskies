@@ -12,8 +12,16 @@ class GamesController < ApplicationController
   end
 
   def show
-    @current_player = current_user
     @game = Game.find(params[:id])
+    @playing = @game.playing_for_user(current_user)
+    @move = @playing.moves.new
+
+    player = Playing.where(user_id: current_user.id)
+    current_player = player.where(game_id: @game.id)
+    current_faction = Faction.where(playing_id: current_player).first
+    @fleets = Fleet.where(faction_id: current_faction, alive: true)
+
+
   end
 
   def new
@@ -48,7 +56,7 @@ class GamesController < ApplicationController
   end
 
   def game_params
-    params.require(:game).permit(:name, :user_id)
+    params.require(:game).permit(:name, :user_id, :aasm_state)
   end
 
 end

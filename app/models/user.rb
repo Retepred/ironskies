@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :playings
   has_many :games, through: :playings
   has_many :factions
+  has_many :moves, through: :playings
 
 
   # def faction_ids

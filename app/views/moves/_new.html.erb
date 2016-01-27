@@ -1,0 +1,35 @@
+<h1>new move</h1>
+
+<%= form_for [@game, @move] do |f| %>
+  <div class="field">
+    <%= f.label :fleet_id %>
+    <%= f.collection_select :fleet_id, @playing.fleets.alive, 'id', 'id', prompt: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :action %>
+    <%= f.select :action, %w(move defend support) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :province_id %>
+    <%= f.select :province_id, [] %>
+  </div>
+
+  <script type="text/javascript">
+  $('#move_fleet_id').change(function(){
+    $.get('/fleet/'+$(this).val()+'/adjacent_provinces').success(function(data) {
+      $el = $('#move_province_id');
+      $el.empty();
+      $.each(data, function(i, key_and_value) {
+        key = key_and_value[0];
+        value = key_and_value[1];
+        $el.append($("<option></option>")
+           .attr("value", value).text(key));
+      });
+    });
+  })
+  </script>
+
+  <%= submit_tag %>
+<% end %>

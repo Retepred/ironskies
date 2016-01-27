@@ -42,11 +42,19 @@ class Game < ActiveRecord::Base
     end
   end
 
+  def playing_for_user(user)
+    playings.find_by(user_id: user.id)
+  end
+
   def compute_moves
   end
 
   def move_fleet(province, fleet)
     fleet.province = province
+  end
+
+  def find_province_of_fleet(fleet)
+    province = fleet.province
   end
 
   def add_fleet(user)

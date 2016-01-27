@@ -2,14 +2,12 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: 'registrations' }
   get "/users", to: "users#index"
-  post 'move/attack'
-  post 'move/defend'
-  post 'move/support'
 
   root to: "home#index"
 
   resources :games do
     resources :players, controller: :playings
+    resources :moves
     member do
       put :start
       put :end
@@ -17,6 +15,9 @@ Rails.application.routes.draw do
   end
 
   resources :instructions
+  resources :fleet do
+    get :adjacent_provinces
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

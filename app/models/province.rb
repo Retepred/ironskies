@@ -9,6 +9,7 @@ class Province < ActiveRecord::Base
   scope :islands, -> { joins(:province_template).where(province_templates: { island: true } ) }
 
   delegate :island?, to: :province_template
+  delegate :name, to: :province_template
 
 # This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies

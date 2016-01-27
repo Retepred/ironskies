@@ -23,6 +23,7 @@
 <% @game.time_check %>
 
 <div class='game_menu'>
+
   <div class='announcements'>
     <img class='announcementspic' src="/announcementsborder.png">
     <div class='announcement_text'>
@@ -30,17 +31,107 @@
     </div>
   </div>
 
-  <div class='fleet'>
-    Example fleet 1
-    <%= button_to 'attack', move_attack_path, method: :post %>
-    <%= button_to 'defend', move_attack_path, method: :post %>
-    <%= button_to 'support', move_attack_path, method: :post %>
+  <div class='fleet_list'>
+    <% @fleets.each do |fleet|%>
+    <div class='fleet'>
+      Fleet number:<%=fleet.id%>
+
+
+    </div>
+    <% end %>
+
+    <%= render partial: 'moves/new' %>
+
   </div>
 
 </div>
+
 <div class='game'>
   <img class='gamepic' src="/gamebackgroundcolours.png">
-<!--   <img class='announcementspic' src="/gameborder.png"> -->
+  <div class='London1'></div>
+  <div class="York2"></div>
+  <div class='London3'></div>
+  <div class="York4"></div>
+  <div class='London5'></div>
+  <div class="York6"></div>
+  <div class='London7'></div>
+  <div class="York8"></div>
+  <div class='London9'></div>
+  <div class="York10"></div>
+  <div class='London11'></div>
+  <div class="York12"></div>
+  <div class='London13'></div>
+  <div class="York14"></div>
+  <div class='London15'></div>
+  <div class="York16"></div>
+  <div class='London17'></div>
+  <div class="York18"></div>
+
+  <div class="sea19"></div>
+  <div class="sea20"></div>
+  <div class="sea21"></div>
+  <div class="sea22"></div>
+  <div class="sea23"></div>
+  <div class="sea24"></div>
+  <div class="sea25"></div>
+  <div class="sea26"></div>
+  <div class="sea27"></div>
+  <div class="sea28"></div>
+
+  <div class="sea29"></div>
+  <div class="sea30"></div>
+  <div class="sea31"></div>
+  <div class="sea32"></div>
+  <div class="sea33"></div>
+  <div class="sea34"></div>
+  <div class="sea35"></div>
+  <div class="sea36"></div>
+  <div class="sea37"></div>
+  <div class="sea38"></div>
+
+  <div class="sea39"></div>
+  <div class="sea40"></div>
+  <div class="sea41"></div>
+  <div class="sea42"></div>
+  <div class="sea43"></div>
+  <div class="sea44"></div>
+  <div class="sea45"></div>
+  <div class="sea46"></div>
+  <div class="sea47"></div>
+  <div class="sea48"></div>
+
+  <div class="sea49"></div>
+  <div class="sea50"></div>
+  <div class="sea51"></div>
+  <div class="sea52"></div>
+  <div class="sea53"></div>
+  <div class="sea54"></div>
+  <div class="sea55"></div>
+  <div class="sea56"></div>
+  <div class="sea57"></div>
+  <div class="sea58"></div>
+
+  <div class="sea59"></div>
+  <div class="sea60"></div>
+  <div class="sea61"></div>
+  <div class="sea62"></div>
+  <div class="sea63"></div>
+  <div class="sea64"></div>
+  <div class="sea65"></div>
+  <div class="sea66"></div>
+  <div class="sea67"></div>
+  <div class="sea68"></div>
+
+  <div class="sea69"></div>
+  <div class="sea70"></div>
+  <div class="sea71"></div>
+  <div class="sea72"></div>
+  <div class="sea73"></div>
+  <div class="sea74"></div>
+  <div class="sea75"></div>
+  <div class="sea76"></div>
+  <div class="sea77"></div>
+  <div class="sea78"></div>
 
 </div>
 <% end %>

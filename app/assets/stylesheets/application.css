@@ -413,3 +413,2102 @@ a {
   opacity: 0.8;
   border: 1px solid black;
 }
+
+/*===========================================================================*/
+/*===========================================================================*/
+/*===========================================================================*/
+/*Game divs to show fleets and island control:*/
+
+.London1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.London8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+.York1{
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.York8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+.Leeds1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Leeds8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+.Newcastle1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Newcastle8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+.Birmingham1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Birmingham8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+
+
+.Liverpool1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Liverpool8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+
+
+.Manchester1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Manchester8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Southampton1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Southampton8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Sheffield1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Sheffield8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+.Oxford1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Oxford8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+.Cardiff1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cardiff8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+.Edinburgh1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Edinburgh8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+.Aberdeen1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Aberdeen8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+.Glasgow1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Glasgow8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+.Dublin1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Dublin8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+.Cork1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Cork8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+.Limmerick1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Limmerick8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+.Belfast1 {
+  background-color: red;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast2 {
+  background-color: blue;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast3 {
+  background-color: green;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast4 {
+  background-color: yellow;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast5 {
+  background-color: black;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast6 {
+  background-color: fuchsia;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast7 {
+  background-color: white;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.Belfast8 {
+  background-color: purple;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.sea19 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 4%;
+  left: 2%;
+  border-radius:25px;
+}
+.sea20 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 4%;
+  left: 10%;
+  border-radius:25px;
+}
+.sea21 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 4%;
+  left: 16%;
+  border-radius:25px;
+}
+.sea22 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 5%;
+  left: 22%;
+  border-radius:25px;
+}
+.sea23 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 6%;
+  left: 31%;
+  border-radius:25px;
+}
+.sea24 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 6%;
+  left: 43%;
+  border-radius:25px;
+}
+.sea25 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 9%;
+  left: 59%;
+  border-radius:25px;
+}
+.sea26 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 12%;
+  left: 75%;
+  border-radius:25px;
+}
+.sea27 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 11%;
+  left: 93%;
+  border-radius:25px;
+}
+.sea28 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 12%;
+  left: 4%;
+  border-radius:25px;
+}
+.sea29 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 13%;
+  left: 13.3%;
+  border-radius:25px;
+}
+.sea30 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 15%;
+  left: 23%;
+  border-radius:25px;
+}
+.sea31 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 15%;
+  left: 38.2%;
+  border-radius:25px;
+}
+.sea32 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 15%;
+  left: 50%;
+  border-radius:25px;
+}
+.sea33 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 22%;
+  left: 5%;
+  border-radius:25px;
+}
+.sea34 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 30%;
+  left: 16%;
+  border-radius:25px;
+}
+.sea35 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 27%;
+  left: 28%;
+  border-radius:25px;
+}
+
+.sea36 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 30%;
+  left: 46%;
+  border-radius:25px;
+}
+.sea37 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 30%;
+  left: 53%;
+  border-radius:25px;
+}
+.sea38 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 26%;
+  left: 63%;
+  border-radius:25px;
+}
+.sea39 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 32%;
+  left: 5%;
+  border-radius:25px;
+}
+.sea40 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea41 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea42 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea43 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea44 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea45 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea46 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea47 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea48 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea49 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea50 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea51 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea52 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea53 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+.sea54 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea55 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea56 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea57 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea58 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea59 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea60 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea61 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea62 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea63 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea64 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea65 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea66 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea67 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea68 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea69 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea70 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea71 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea72 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea73 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea74 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea75 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea76 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea77 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+.sea78 {
+  background-color: #87CEEB;
+  position: absolute;
+  width: 1.5%;
+  height: 1rem;
+  top: 44%;
+  left: 55%;
+  border-radius:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
