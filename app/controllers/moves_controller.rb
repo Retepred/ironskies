@@ -6,7 +6,7 @@ class MovesController < ApplicationController
 
     respond_to do |format|
       if @move.save
-        flash[:notice] = "Move #{@game.name} was successfully saved."
+        flash[:notice] = "A new move in #{@game.name} was successfully saved."
         format.html { redirect_to @game }
         format.xml  { render :xml => @move, :status => :created, :location => @game }
       else
