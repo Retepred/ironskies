@@ -58,15 +58,15 @@ class Game < ActiveRecord::Base
   end
 
   def move_fleet(province, fleet)
-    if province.fleet_id == nil
-      fleet.province = province
+    # if province.fleet_id == nil
+    #   fleet.province = province
     # elsif province.fleet_id.to_a.length >= attack_power
     #   fleet.alive = false
     # elsif province.fleet_id.to_a.length < attack_power
     #   fleet.province = province
-    else
-      fleet.alive = false
-    end
+    # else
+    #   fleet.alive = false
+    # end
   end
 
   def find_province_of_fleet(fleet)
