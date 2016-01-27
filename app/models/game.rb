@@ -117,7 +117,7 @@ class Game < ActiveRecord::Base
     province_number(user) * 2
   end
 
-  def changes(user)
+  def fleet_number_changes(user)
     fleet_number(user) - number_of_fleets_allowed(user)
   end
 
