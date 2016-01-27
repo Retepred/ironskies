@@ -156,7 +156,7 @@ class Game < ActiveRecord::Base
 
     # find all the factions and allocate them to islands
     factions = self.factions.to_a
-    self.provinces.islands.each do |province|     
+    self.provinces.islands.each do |province|
       if faction = factions.pop
         province.faction_id = faction.id
         province.save!

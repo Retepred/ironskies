@@ -3,7 +3,20 @@ class MovesController < ApplicationController
 
   def create
     @move = @playing.moves.new(move_params)
+
+    respond_to do |format|
+      if @move.save
+        flash[:notice] = "Move #{@game.name} was successfully saved."
+        format.html { redirect_to @game }
+        format.xml  { render :xml => @move, :status => :created, :location => @game }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @move.errors, :status => :unprocessable_entity }
+      end
+    end
   end
+
+  
   
 
   private
