@@ -165,7 +165,7 @@ a {
 
 .main_menu {
   position: absolute;
-  left: 33%;
+  left: 30%;
   top: 1px;
   padding: none;
   border: none;
@@ -330,6 +330,8 @@ a {
   font-weight:bold;
   padding:6px 12px;
   text-decoration:none;
+  left: 40%;
+  position: relative;
 }
 .gamelistbutton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #514ba3), color-stop(1, #5b5bab));
@@ -348,7 +350,7 @@ a {
 
 
 .newgamebutton {
-  left: 35%;
+  left: 37%;
   position: relative;
   -moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
   -webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
