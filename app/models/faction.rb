@@ -19,12 +19,14 @@ class Faction < ActiveRecord::Base
   # This section of code deals with finding the fleets owned by a faction, call fleet_ids
     def owned_provinces
       Fleet.where("id in (?)", fleet_ids)
-    end  
+    end
 
 
-    def update_fleet_number(faction_number)
+
+
+    def update_fleet_number(faction_id)
       new_number = fleets.length
-      faction = Faction.find_by(faction_number)
+      faction = Faction.find_by(faction_id)
       faction.update_attribute(number_of_fleets, new_number)
     end
 
