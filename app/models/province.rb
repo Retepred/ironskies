@@ -22,21 +22,21 @@ class Province < ActiveRecord::Base
   end
 
   def adjacent_provinces
-    Province.where("id in (?)", adjacent_province_ids)
+    game.provinces.where("province_template_id in (?)", adjacent_province_ids)
   end
 
 
 # This section of code deals with finding the garrison of a province, call find_garrison
-  def fleets
-    Fleet.where("fleets.position = :id", id: id)
-  end
+  # def fleets
+  #   Fleet.where("fleets.position = :id", id: id)
+  # end
 
-  def fleet_positions
-    fleets.pluck(:position).flatten
-  end
+  # def fleet_positions
+  #   fleets.pluck(:position).flatten
+  # end
 
-  def garrison
-    Fleet.where("id in (?)", province_id)
-  end
+  # def garrison
+  #   Fleet.where("id in (?)", province_id)
+  # end
 
 end

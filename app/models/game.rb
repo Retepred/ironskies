@@ -54,8 +54,18 @@ class Game < ActiveRecord::Base
   def compute_moves
   end
 
+  def attack_power
+
+  end
+
   def move_fleet(province, fleet)
-    fleet.province = province
+    if province.fleet_id == nil
+      fleet.province = province
+    elsif province.fleet_id.to_a.length >= attack_power
+      fleet.alive = false
+    elsif province.fleet_id.to_a.length < attack_power
+      fleet.province = province
+    end
   end
 
   def find_province_of_fleet(fleet)
@@ -161,6 +171,7 @@ class Game < ActiveRecord::Base
         province.faction_id = faction.id
         province.save!
         Fleet.create!(faction: faction, province: province)
+        # binding.pry
         if province = province.reload.adjacent_provinces.random.unoccupied.first
           province.faction_id = faction.id if province.island?
           province.save!

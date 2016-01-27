@@ -4,7 +4,7 @@ class Fleet < ActiveRecord::Base
 
   scope :alive, -> { where(alive: true) }
 
-  delegate :playing, to: :faction
+  delegate :playing, to: :faction, allow_nil: true
 
   def fleet_adjacencies
     Adjacency.where("adjacencies.province1_id = :id or adjacencies.province2_id = :id", id: province.try(:province_template_id))
