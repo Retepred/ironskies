@@ -1,7 +1,7 @@
 class Game < ActiveRecord::Base
   include AASM
 
-  has_many :playings
+  has_many :playings, -> { order(position: :asc) }
   has_many :players, through: :playings, source: :user
   has_many :provinces
   has_many :factions, through: :playings
@@ -28,6 +28,11 @@ class Game < ActiveRecord::Base
     end
 
   end
+
+  # def assign_teams
+  # @team1 = self.playings.order(:position).first
+  #     puts 'wooooo!'
+  # end
 
   def time_check
     @time = Time.now

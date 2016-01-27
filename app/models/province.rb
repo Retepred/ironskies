@@ -10,6 +10,7 @@ class Province < ActiveRecord::Base
 
   delegate :island?, to: :province_template
   delegate :name, to: :province_template
+  delegate :playing, to: :faction, allow_nil: true
 
 # This section of code deals with finding the ids of adjacent provinces, call adjacent_provinces
   def adjacencies
