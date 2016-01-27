@@ -69,16 +69,33 @@ a {
   height: 100%;
 }
 
+.fleet_pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fleet_list {
+  height: 5rem;
+}
+
 .fleet {
   position: relative;
   border: 1px solid black;
   width: 50%;
   background-color: white;
   left: 20%;
-  top: 40%;
+  top: 20%;
+  font-family: 'calligraphyflf';
 }
 
 .gamepic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fleetpic {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -100,6 +117,7 @@ a {
   height:40rem;
   width: 19%;
   left: 0px;
+  font-family: 'calligraphyflf';
 }
 
 .main2 {
@@ -151,6 +169,7 @@ a {
   top: 1px;
   padding: none;
   border: none;
+  font-family: 'calligraphyflf';
 }
 
 .play {
@@ -158,6 +177,7 @@ a {
   left: 45%;
   top: 3rem;
   display: inline;
+  font-family: 'calligraphyflf';
 }
 
 .whitebackground {
@@ -245,8 +265,8 @@ a {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
+  font-family: 'calligraphyflf';
+  font-size:24px;
   font-weight:bold;
   padding:6px 12px;
   text-decoration:none;
@@ -275,8 +295,8 @@ a {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:17px;
+  font-family: 'calligraphyflf';
+  font-size:26px;
   padding:7px 13px;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
@@ -305,8 +325,8 @@ a {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
+  font-family: 'calligraphyflf';
+  font-size:24px;
   font-weight:bold;
   padding:6px 12px;
   text-decoration:none;
@@ -345,8 +365,8 @@ a {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
+  font-family: 'calligraphyflf';
+  font-size:24px;
   font-weight:bold;
   padding:6px 12px;
   text-decoration:none;
@@ -383,8 +403,8 @@ a {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
+  font-family: 'calligraphyflf';
+  font-size:24px;
   font-weight:bold;
   padding:6px 12px;
   text-decoration:none;
@@ -613,7 +633,7 @@ a {
   border-radius:25px;
 }
 
-.sea19 {
+#sea19 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -621,7 +641,7 @@ a {
   left: 2%;
   border-radius:25px;
 }
-.sea20 {
+#sea20 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -629,7 +649,7 @@ a {
   left: 10%;
   border-radius:25px;
 }
-.sea21 {
+#sea21 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -637,7 +657,7 @@ a {
   left: 16%;
   border-radius:25px;
 }
-.sea22 {
+#sea22 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -645,7 +665,7 @@ a {
   left: 22%;
   border-radius:25px;
 }
-.sea23 {
+#sea23 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -653,7 +673,7 @@ a {
   left: 31%;
   border-radius:25px;
 }
-.sea24 {
+#sea24 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -661,7 +681,7 @@ a {
   left: 43%;
   border-radius:25px;
 }
-.sea25 {
+#sea25 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -669,7 +689,7 @@ a {
   left: 59%;
   border-radius:25px;
 }
-.sea26 {
+#sea26 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -677,7 +697,7 @@ a {
   left: 75%;
   border-radius:25px;
 }
-.sea27 {
+#sea27 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -685,7 +705,7 @@ a {
   left: 93%;
   border-radius:25px;
 }
-.sea28 {
+#sea28 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -693,7 +713,7 @@ a {
   left: 4%;
   border-radius:25px;
 }
-.sea29 {
+#sea29 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -701,7 +721,7 @@ a {
   left: 13.3%;
   border-radius:25px;
 }
-.sea30 {
+#sea30 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -709,7 +729,7 @@ a {
   left: 23%;
   border-radius:25px;
 }
-.sea31 {
+#sea31 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -717,7 +737,7 @@ a {
   left: 38.2%;
   border-radius:25px;
 }
-.sea32 {
+#sea32 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -725,7 +745,7 @@ a {
   left: 50%;
   border-radius:25px;
 }
-.sea33 {
+#sea33 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -733,7 +753,7 @@ a {
   left: 5%;
   border-radius:25px;
 }
-.sea34 {
+#sea34 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -741,7 +761,7 @@ a {
   left: 16%;
   border-radius:25px;
 }
-.sea35 {
+#sea35 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -750,7 +770,7 @@ a {
   border-radius:25px;
 }
 
-.sea36 {
+#sea36 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -758,7 +778,7 @@ a {
   left: 46%;
   border-radius:25px;
 }
-.sea37 {
+#sea37 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -766,7 +786,7 @@ a {
   left: 53%;
   border-radius:25px;
 }
-.sea38 {
+#sea38 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -774,7 +794,7 @@ a {
   left: 63%;
   border-radius:25px;
 }
-.sea39 {
+#sea39 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -782,7 +802,7 @@ a {
   left: 5%;
   border-radius:25px;
 }
-.sea40 {
+#sea40 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -790,7 +810,7 @@ a {
   left: 15%;
   border-radius:25px;
 }
-.sea41 {
+#sea41 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -798,7 +818,7 @@ a {
   left: 22%;
   border-radius:25px;
 }
-.sea42 {
+#sea42 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -806,7 +826,7 @@ a {
   left: 31%;
   border-radius:25px;
 }
-.sea43 {
+#sea43 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -814,7 +834,7 @@ a {
   left: 40.5%;
   border-radius:25px;
 }
-.sea44 {
+#sea44 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -822,7 +842,7 @@ a {
   left: 46%;
   border-radius:25px;
 }
-.sea45 {
+#sea45 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -830,7 +850,7 @@ a {
   left: 59%;
   border-radius:25px;
 }
-.sea46 {
+#sea46 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -838,7 +858,7 @@ a {
   left: 65%;
   border-radius:25px;
 }
-.sea47 {
+#sea47 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -846,7 +866,7 @@ a {
   left: 75%;
   border-radius:25px;
 }
-.sea48 {
+#sea48 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -854,7 +874,7 @@ a {
   left: 81%;
   border-radius:25px;
 }
-.sea49 {
+#sea49 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -862,7 +882,7 @@ a {
   left: 92%;
   border-radius:25px;
 }
-.sea50 {
+#sea50 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -870,7 +890,7 @@ a {
   left: 1%;
   border-radius:25px;
 }
-.sea51 {
+#sea51 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -878,7 +898,7 @@ a {
   left: 4%;
   border-radius:25px;
 }
-.sea52 {
+#sea52 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -886,7 +906,7 @@ a {
   left: 16%;
   border-radius:25px;
 }
-.sea53 {
+#sea53 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -895,7 +915,7 @@ a {
   border-radius:25px;
 }
 
-.sea54 {
+#sea54 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -903,7 +923,7 @@ a {
   left: 40%;
   border-radius:25px;
 }
-.sea55 {
+#sea55 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -911,7 +931,7 @@ a {
   left: 46%;
   border-radius:25px;
 }
-.sea56 {
+#sea56 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -919,7 +939,7 @@ a {
   left: 52%;
   border-radius:25px;
 }
-.sea57 {
+#sea57 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -927,7 +947,7 @@ a {
   left: 48%;
   border-radius:25px;
 }
-.sea58 {
+#sea58 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -935,7 +955,7 @@ a {
   left: 56%;
   border-radius:25px;
 }
-.sea59 {
+#sea59 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -943,7 +963,7 @@ a {
   left: 67%;
   border-radius:25px;
 }
-.sea60 {
+#sea60 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -951,7 +971,7 @@ a {
   left: 75%;
   border-radius:25px;
 }
-.sea61 {
+#sea61 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -959,7 +979,7 @@ a {
   left: 82%;
   border-radius:25px;
 }
-.sea62 {
+#sea62 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -967,7 +987,7 @@ a {
   left: 93%;
   border-radius:25px;
 }
-.sea63 {
+#sea63 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -975,7 +995,7 @@ a {
   left: 4%;
   border-radius:25px;
 }
-.sea64 {
+#sea64 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -983,7 +1003,7 @@ a {
   left: 16%;
   border-radius:25px;
 }
-.sea65 {
+#sea65 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -991,7 +1011,7 @@ a {
   left: 25%;
   border-radius:25px;
 }
-.sea66 {
+#sea66 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -999,7 +1019,7 @@ a {
   left: 35%;
   border-radius:25px;
 }
-.sea67 {
+#sea67 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1007,7 +1027,7 @@ a {
   left: 82%;
   border-radius:25px;
 }
-.sea68 {
+#sea68 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1015,7 +1035,7 @@ a {
   left: 90%;
   border-radius:25px;
 }
-.sea69 {
+#sea69 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1023,7 +1043,7 @@ a {
   left: 96%;
   border-radius:25px;
 }
-.sea70 {
+#sea70 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1031,7 +1051,7 @@ a {
   left: 7%;
   border-radius:25px;
 }
-.sea71 {
+#sea71 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1039,7 +1059,7 @@ a {
   left: 19%;
   border-radius:25px;
 }
-.sea72 {
+#sea72 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1047,7 +1067,7 @@ a {
   left: 29%;
   border-radius:25px;
 }
-.sea73 {
+#sea73 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1055,7 +1075,7 @@ a {
   left: 39%;
   border-radius:25px;
 }
-.sea74 {
+#sea74 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1063,7 +1083,7 @@ a {
   left: 48%;
   border-radius:25px;
 }
-.sea75 {
+#sea75 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1071,7 +1091,7 @@ a {
   left: 60%;
   border-radius:25px;
 }
-.sea76 {
+#sea76 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1079,7 +1099,7 @@ a {
   left: 76%;
   border-radius:25px;
 }
-.sea77 {
+#sea77 {
   position: absolute;
   width: 1.5%;
   height: 1rem;
@@ -1087,7 +1107,7 @@ a {
   left: 88%;
   border-radius:25px;
 }
-.sea78 {
+#sea78 {
   position: absolute;
   width: 1.5%;
   height: 1rem;

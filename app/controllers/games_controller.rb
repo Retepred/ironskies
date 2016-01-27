@@ -15,6 +15,10 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     @playing = @game.playing_for_user(current_user)
     @move = @playing.moves.new
+    @factions = Faction.all
+    @factions.each do |faction|
+      @player_position =  faction.playing.position
+    end
 
     player = Playing.where(user_id: current_user.id)
     current_player = player.where(game_id: @game.id)

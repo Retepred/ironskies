@@ -32,16 +32,16 @@
   </div>
 
   <div class='fleet_list'>
+    Your fleets, sir:
     <% @fleets.each do |fleet|%>
     <div class='fleet'>
       Fleet number:<%=fleet.id%>
-
-
     </div>
     <% end %>
+  </div>
 
+  <div class='moves_new'>
     <%= render partial: 'moves/new' %>
-
   </div>
 
 </div>
@@ -50,18 +50,22 @@
   <img class='gamepic' src="/gamebackgroundcolours.png">  
 
   <% @game.provinces.each do |province| %>
-    <% classes = [] %>
-    <% province_div_id = province.island? ? province.name : "sea_#{province.id}" %>
-    <% position = province.playing.position if province.playing %>
-    <% classes << "Team#{position}" if position %>
+  <% classes = [] %>
+  <% province_div_id = province.island? ? province.name : "sea#{province.province_template_id}" %>
+  <% playing = province.playing %>
+  <% position = playing.position if playing %>
+  <% classes << "Team#{position}" if position %>
 
-    <div id="<%=province_div_id%>" class="<%= classes.join %>">
 
-      <% if false %>
-        <img class='gamepic' src="/ship<%=''%>.png">  
-      <% end %>
+  <div id="<%=province_div_id%>" class="<%= classes.join %>">
 
-    </div>
+    <% if province.fleet %>
+    <% playing = province.fleet.try(:playing) %>
+    <% position = playing.position if playing %>
+    <img class='fleetpic' src="/ship<%=position%>.png" title="<%= province.fleet.id %>">  
+    <% end %>
+
+  </div>
   <% end %>
 </div>
 
