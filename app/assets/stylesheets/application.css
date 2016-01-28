@@ -40,8 +40,10 @@ a {
   display: block;
 }
 
-.new {
-  
+.login {
+  left: 40%;
+  top: 5rem;
+  position: relative;
 }
 
 .announcements {
