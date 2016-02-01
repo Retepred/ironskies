@@ -15,6 +15,10 @@ class MovesController < ApplicationController
       end
     end
   end
+
+  def show
+    @game = Game.find(params[:id])
+  end
   
   
 
