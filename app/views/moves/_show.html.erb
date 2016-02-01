@@ -1,8 +1,5 @@
 YOU MADE A MOOOVE!
 
 <% @moves.each do |move| %>
-<%=move.province%>
-<%=move.fleet%>
-
 <% @game.move_fleet(move.province, move.fleet) %>
 <%end%>
