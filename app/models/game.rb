@@ -58,7 +58,7 @@ class Game < ActiveRecord::Base
   end
 
   def move_fleet(province_selected, fleet)
-    unless fleet == nil
+    if fleet == nil
       fleet.province = province_selected
       fleet.save!
     end
