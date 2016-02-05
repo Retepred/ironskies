@@ -58,11 +58,13 @@ class Game < ActiveRecord::Base
   end
 
   def move_fleet(province_selected, fleet)
-    if province_selected.fleet == nil
-      fleet.province = province_selected
-      fleet.save!
-    elsif fleet == !nil
-      puts 'oh dear!'
+    if fleet
+      if province_selected.fleet == nil
+        fleet.province = province_selected
+        fleet.save!
+      elsif fleet == !nil
+        puts 'oh dear!'
+      end
     end
   end
 
