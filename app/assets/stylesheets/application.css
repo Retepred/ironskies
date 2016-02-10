@@ -28,6 +28,10 @@
   opacity: 1;
 }
 
+body {
+  overflow:hidden;
+}
+
 ul li {
   list-style: none;
   text-decoration: none;
@@ -49,7 +53,6 @@ a {
 .announcements {
   position: relative;
   color: black;
-  opacity: 0%;
   overflow: scroll;
   height: 10rem;
   width: 100%;
@@ -226,7 +229,6 @@ a {
 .textbox {
   position: absolute;
   color: black;
-  opacity: 0%;
   overflow: scroll;
   height: 26rem;
   width: 60%;
@@ -240,7 +242,6 @@ a {
 .textboxsmall {
   position: absolute;
   color: black;
-  opacity: 0%;
   overflow: scroll;
   height: 6rem;
   width: 90%;
@@ -475,649 +476,344 @@ a {
   background-color: purple;
 }
 
-#London {
+.province {
   position: absolute;
   width: 1.5%;
   height: 1rem;
+  border-radius: 25px;
+}
+
+#London {
   top: 44%;
   left: 55%;
-  border-radius:25px;
 }
 
 #York{
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 20%;
   left: 46.5%;
-  border-radius:25px;
 }
 
 #Leeds {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 43%;
   left: 37%;
-  border-radius:25px;
 }
 
 #Newcastle {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 36%;
   left: 89%;
-  border-radius:25px;
 }
 
 #Birmingham {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 45%;
   left: 19%;
-  border-radius:25px;
 }
 
 #Liverpool {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 45%;
   left: 71%;
-  border-radius:25px;
 }
 
 #Manchester {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 65%;
   left: 43%;
-  border-radius:25px;
 }
 
 #Southampton {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 93%;
   left: 94%;
-  border-radius:25px;
 }
 
 #Sheffield {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 20%;
   left: 68%;
-  border-radius:25px;
 }
 
 #Oxford {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 72%;
   left: 65%;
-  border-radius:25px;
 }
 
 #Cardiff {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 37%;
   left: 5%;
-  border-radius:25px;
 }
 
 #Edinburgh {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 5%;
   left: 5.5%;
-  border-radius:25px;
 }
 
 #Aberdeen {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 6%;
   left: 26.5%;
-  border-radius:25px;
 }
 
 #Glasgow {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 21%;
   left: 14%;
-  border-radius:25px;
 }
 
 #Dublin {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 95%;
   left: 3%;
-  border-radius:25px;
 }
 
 #Cork {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 70.5%;
   left: 3.5%;
-  border-radius:25px;
 }
 
 #Limmerick {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 85%;
   left: 25%;
-  border-radius:25px;
 }
 
 #Belfast {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 64%;
   left: 19%;
-  border-radius:25px;
 }
 
 #sea19 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 4%;
   left: 2%;
-  border-radius:25px;
 }
 #sea20 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 4%;
   left: 10%;
-  border-radius:25px;
 }
 #sea21 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 4%;
   left: 16%;
-  border-radius:25px;
 }
 #sea22 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 5%;
   left: 22%;
-  border-radius:25px;
 }
 #sea23 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 6%;
   left: 31%;
-  border-radius:25px;
 }
 #sea24 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 6%;
   left: 43%;
-  border-radius:25px;
 }
 #sea25 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 9%;
   left: 59%;
-  border-radius:25px;
 }
 #sea26 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 12%;
   left: 75%;
-  border-radius:25px;
 }
 #sea27 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 11%;
   left: 93%;
-  border-radius:25px;
 }
 #sea28 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 12%;
   left: 4%;
-  border-radius:25px;
 }
 #sea29 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 13%;
   left: 13.3%;
-  border-radius:25px;
 }
 #sea30 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 15%;
   left: 23%;
-  border-radius:25px;
 }
 #sea31 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 15%;
   left: 38.2%;
-  border-radius:25px;
 }
 #sea32 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 15%;
   left: 50%;
-  border-radius:25px;
 }
 #sea33 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 22%;
   left: 5%;
-  border-radius:25px;
 }
 #sea34 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 30%;
   left: 16%;
-  border-radius:25px;
 }
 #sea35 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 27%;
   left: 28%;
-  border-radius:25px;
 }
 
 #sea36 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 30%;
   left: 46%;
-  border-radius:25px;
 }
 #sea37 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 30%;
   left: 53%;
-  border-radius:25px;
 }
 #sea38 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 26%;
   left: 63%;
-  border-radius:25px;
 }
 #sea39 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 32%;
   left: 5%;
-  border-radius:25px;
 }
 #sea40 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 40%;
   left: 15%;
-  border-radius:25px;
 }
 #sea41 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 42%;
   left: 22%;
-  border-radius:25px;
 }
 #sea42 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 44%;
   left: 31%;
-  border-radius:25px;
 }
 #sea43 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 45%;
   left: 40.5%;
-  border-radius:25px;
 }
 #sea44 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 46%;
   left: 46%;
-  border-radius:25px;
 }
 #sea45 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 46%;
   left: 59%;
-  border-radius:25px;
 }
 #sea46 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 46%;
   left: 65%;
-  border-radius:25px;
 }
 #sea47 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 46%;
   left: 75%;
-  border-radius:25px;
 }
 #sea48 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 32%;
   left: 81%;
-  border-radius:25px;
 }
 #sea49 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 28%;
   left: 92%;
-  border-radius:25px;
 }
 #sea50 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 42%;
   left: 1%;
-  border-radius:25px;
 }
 #sea51 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 54%;
   left: 4%;
-  border-radius:25px;
 }
 #sea52 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 54%;
   left: 16%;
-  border-radius:25px;
 }
 #sea53 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 57%;
   left: 28%;
-  border-radius:25px;
 }
 
 #sea54 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 57%;
   left: 40%;
-  border-radius:25px;
 }
 #sea55 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 59%;
   left: 46%;
-  border-radius:25px;
 }
 #sea56 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 57%;
   left: 52%;
-  border-radius:25px;
 }
 #sea57 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 69%;
   left: 48%;
-  border-radius:25px;
 }
 #sea58 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 69%;
   left: 56%;
-  border-radius:25px;
 }
 #sea59 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 67%;
   left: 67%;
-  border-radius:25px;
 }
 #sea60 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 71%;
   left: 75%;
-  border-radius:25px;
 }
 #sea61 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 54%;
   left: 82%;
-  border-radius:25px;
 }
 #sea62 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 45%;
   left: 93%;
-  border-radius:25px;
 }
 #sea63 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 78%;
   left: 4%;
-  border-radius:25px;
 }
 #sea64 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 76%;
   left: 16%;
-  border-radius:25px;
 }
 #sea65 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 67%;
   left: 25%;
-  border-radius:25px;
 }
 #sea66 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 73%;
   left: 35%;
-  border-radius:25px;
 }
 #sea67 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 72%;
   left: 82%;
-  border-radius:25px;
 }
 #sea68 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 67%;
   left: 90%;
-  border-radius:25px;
 }
 #sea69 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 67%;
   left: 96%;
-  border-radius:25px;
 }
 #sea70 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 90%;
   left: 7%;
-  border-radius:25px;
 }
 #sea71 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 90%;
   left: 19%;
-  border-radius:25px;
 }
 #sea72 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 88%;
   left: 29%;
-  border-radius:25px;
 }
 #sea73 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 88%;
   left: 39%;
-  border-radius:25px;
 }
 #sea74 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 84%;
   left: 48%;
-  border-radius:25px;
 }
 #sea75 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 88%;
   left: 60%;
-  border-radius:25px;
 }
 #sea76 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 88%;
   left: 76%;
-  border-radius:25px;
 }
 #sea77 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 91%;
   left: 88%;
-  border-radius:25px;
 }
 #sea78 {
-  position: absolute;
-  width: 1.5%;
-  height: 1rem;
   top: 90%;
   left: 97%;
-  border-radius:25px;
 }
 
 

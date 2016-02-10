@@ -63,7 +63,7 @@ class Game < ActiveRecord::Base
         fleet.province = province_selected
         fleet.save!
       elsif fleet == !nil
-        puts 'oh dear!'
+        compute_moves
       end
     end
   end

@@ -58,7 +58,7 @@
   <% classes << "Team#{position}" if position %>
 
 
-  <div id="<%=province_div_id%>" class="<%= classes.join %>">
+  <div id="<%= province_div_id %>" class="province <%= classes.join %>">
 
     <% if province.fleet %>
     <% playing = province.fleet.try(:playing) %>
