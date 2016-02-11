@@ -51,7 +51,12 @@ class Game < ActiveRecord::Base
     playings.find_by(user_id: user.id)
   end
 
-  def compute_moves
+  def compute_moves(province_selected, fleet)
+    if province_selected.fleet == nil
+      fleet.province = province_selected
+      fleet.save!
+    elsif fleet == !nil
+    end
   end
 
   def attack_power
@@ -59,12 +64,7 @@ class Game < ActiveRecord::Base
 
   def move_fleet(province_selected, fleet)
     if fleet
-      if province_selected.fleet == nil
-        fleet.province = province_selected
-        fleet.save!
-      elsif fleet == !nil
-        compute_moves
-      end
+      compute_moves(province_selected, fleet)
     end
   end
 
