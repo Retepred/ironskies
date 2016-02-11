@@ -55,11 +55,21 @@ class Game < ActiveRecord::Base
     if province_selected.fleet == nil
       fleet.province = province_selected
       fleet.save!
-    elsif fleet == !nil
+    elsif province_selected.fleet.faction != fleet.faction
+      compute_attack(province_selected, fleet)
+    else
     end
   end
 
-  def attack_power
+  def compute_attack(province_selected, fleet)
+    if fleet.supported == true
+      province_selected.fleet.alive = false
+      province_selected.fleet.save!
+      fleet.province = province_selected
+    elsif fleet.supported == false
+      fleet.alive = false
+      fleet.save!
+    end
   end
 
   def move_fleet(province_selected, fleet)
