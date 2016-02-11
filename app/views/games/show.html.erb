@@ -60,7 +60,7 @@
 
   <div id="<%= province_div_id %>" class="province <%= classes.join %>">
 
-    <% if province.fleet %>
+    <% if province.fleet && province.fleet.alive == true %>
     <% playing = province.fleet.try(:playing) %>
     <% position = playing.position if playing %>
     <img class='fleetpic' src="/ship<%=position%>.png" title="<%= province.fleet.id %>">  
