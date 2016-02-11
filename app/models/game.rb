@@ -62,11 +62,11 @@ class Game < ActiveRecord::Base
   end
 
   def compute_attack(province_selected, fleet)
-    if fleet.supported == true
+    if fleet.supported > province_selected.fleet.supported
       province_selected.fleet.alive = false
       province_selected.fleet.save!
       fleet.province = province_selected
-    elsif fleet.supported == false
+    elsif fleet.supported <= province_selected.fleet.supported
       fleet.alive = false
       fleet.save!
     end
